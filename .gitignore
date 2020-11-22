@@ -146,3 +146,4 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+/microservices-event-sourcing/mes-config-service/target/
