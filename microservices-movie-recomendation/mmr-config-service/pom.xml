@@ -11,7 +11,9 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>config-server</artifactId>    
+    <groupId>com.devcircus.java.microservices.mmr.config-service</groupId>
+    <artifactId>mmr-config-service</artifactId>    
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     

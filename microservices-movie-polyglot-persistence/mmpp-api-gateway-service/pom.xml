@@ -5,13 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.kbastani</groupId>
-        <artifactId>spring-cloud-microservice-example-parent</artifactId>
-        <version>0.1.0-SNAPSHOT</version>
+        <groupId>com.devcircus.java.microservices.mmpp</groupId>
+        <artifactId>microservices-movie-polyglot-persistence</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>api-gateway-microservice</artifactId>
-    <name>api-gateway-microservice</name>
+    <groupId>com.devcircus.java.microservices.mmpp.apigatewayservice</groupId>
+    <artifactId>mmpp-api-gateway-service</artifactId>
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>    
     <packaging>jar</packaging>
 

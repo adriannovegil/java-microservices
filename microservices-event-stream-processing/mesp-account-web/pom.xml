@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.kbastani</groupId>
-        <artifactId>account</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.devcircus.java.microservices.mesp</groupId>
+        <artifactId>microservices-event-stream-processing</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>account-web</artifactId>    
-    <name>account-web</name>
+    <groupId>com.devcircus.java.microservices.mesp.accountweb</groupId>
+    <artifactId>mesp-account-web</artifactId>    
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

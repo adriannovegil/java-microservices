@@ -147,3 +147,10 @@ Desktop.ini
 ######################
 .eslintcache
 /microservices-event-sourcing/mes-config-service/target/
+/microservices-petclinic/spring-petclinic-admin-server/target/
+/microservices-petclinic/spring-petclinic-api-gateway/target/
+/microservices-petclinic/spring-petclinic-config-server/target/
+/microservices-petclinic/spring-petclinic-customers-service/target/
+/microservices-petclinic/spring-petclinic-discovery-server/target/
+/microservices-petclinic/spring-petclinic-vets-service/target/
+/microservices-petclinic/spring-petclinic-visits-service/target/

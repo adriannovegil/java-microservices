@@ -5,15 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.devcircus.java.microservices.mse</groupId>
-        <artifactId>microservice-strangler-example</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../</relativePath>
+        <groupId>com.devcircus.java.microservices.mls</groupId>
+        <artifactId>microservice-legacy-strangler</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>legacy-edge</artifactId>
-    <name>legacy-applications/legacy-edge</name>
+    <groupId>com.devcircus.java.microservices.mls.legacyedgelegacyservice</groupId>
+    <artifactId>mls-legacy-edge-legacy-service</artifactId>
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.kbastani</groupId>
-        <artifactId>event-sourcing</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.devcircus.java.microservices.mes</groupId>
+        <artifactId>microservices-event-sourcing</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>edge-service</artifactId>    
-    <name>event-sourcing/edge-service</name>
+    <groupId>com.devcircus.java.microservices.mes.edgeservice</groupId>
+    <artifactId>mes-edge-service</artifactId>    
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>    
     <packaging>jar</packaging>
 

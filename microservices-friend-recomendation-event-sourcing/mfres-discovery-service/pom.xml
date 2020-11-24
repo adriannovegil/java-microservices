@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.example</groupId>
-        <artifactId>event-sourcing-microservices-example</artifactId>
+        <groupId>com.devcircus.java.microservices.mfres</groupId>
+        <artifactId>microservices-friend-recomendation-event-sourcing</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>discovery-service</artifactId>    
-    <name>discovery-service</name>
+    <groupId>com.devcircus.java.microservices.mfres.discoveryservice</groupId>
+    <artifactId>mfres-discovery-service</artifactId>
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

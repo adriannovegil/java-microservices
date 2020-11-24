@@ -11,7 +11,9 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>config-server</artifactId>
+    <groupId>com.devcircus.java.microservices.mes.configserver</groupId>
+    <artifactId>mes-config-service</artifactId>
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 

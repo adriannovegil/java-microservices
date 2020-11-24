@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>org.kbastani</groupId>
-        <artifactId>spring-boot-starters</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.devcircus.java.microservices.mesp</groupId>
+        <artifactId>microservices-event-stream-processing</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>spring-boot-starter-aws-lambda</artifactId>
-    <name>spring-boot-starter-aws-lambda</name>
+    <groupId>com.devcircus.java.microservices.mesp.springbootstarterawslambda</groupId>
+    <artifactId>mesp-spring-boot-starter-aws-lambda</artifactId>
+    <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>    
     <packaging>jar</packaging>
 
