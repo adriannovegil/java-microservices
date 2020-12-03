@@ -36,13 +36,13 @@
     </properties>
 
     <modules>
-        <!--<module>mmpp-config-service</module>-->
-        <!--        <module>api-gateway-microservice</module>
-        <module>discovery-microservice</module>
-        <module>movie-microservice</module>
-        <module>rating-microservice</module>
-        <module>ui-search</module>
-        <module>user-microservice</module>-->
+        <module>mmpp-api-gateway-service</module>
+        <module>mmpp-config-service</module>
+        <module>mmpp-discovery-service</module>
+        <module>mmpp-movie-service</module>
+        <module>mmpp-rating-service</module>
+        <module>mmpp-user-service</module>
+        <module>mmpp-web</module>
     </modules>
 
     <dependencyManagement>

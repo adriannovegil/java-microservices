@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mmpp</groupId>
         <artifactId>microservices-movie-polyglot-persistence</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <groupId>com.devcircus.java.microservices.mmpp.discoveryservice</groupId>

@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -21,7 +20,6 @@ import service.data.domain.entity.User;
 @SpringBootApplication
 @EnableNeo4jRepositories
 @EnableZuulProxy
-@EnableHystrix
 public class Application extends Neo4jConfiguration {
 
     // Used to bootstrap the Neo4j database with demo data

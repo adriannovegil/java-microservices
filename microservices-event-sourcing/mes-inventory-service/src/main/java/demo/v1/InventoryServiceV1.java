@@ -1,7 +1,5 @@
 package demo.v1;
 
-
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import demo.inventory.Inventory;
 import demo.inventory.InventoryRepository;
 import demo.product.Product;
@@ -28,7 +26,6 @@ public class InventoryServiceV1 {
         this.neo4jTemplate = neo4jTemplate;
     }
 
-    @HystrixCommand(fallbackMethod = "getProductFallback")
     public Product getProduct(String productId) {
         Product product;
 
@@ -40,10 +37,6 @@ public class InventoryServiceV1 {
         }
 
         return product;
-    }
-
-    private Product getProductFallback(String productId) {
-        return null;
     }
 
     public List<Inventory> getAvailableInventoryForProductIds(String productIds) {

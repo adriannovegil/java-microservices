@@ -36,14 +36,14 @@
     </properties>
 
     <modules>
-        <!--<module>mls-config-service</module>-->
-        <!--        <module>legacy-applications/customer-service</module>
-        <module>legacy-applications/legacy-edge</module>
-        <module>microservices/discovery-service</module>
-        <module>microservices/edge-service</module>
-        <module>microservices/profile-service</module>
-        <module>microservices/profile-web</module>
-        <module>microservices/user-service</module>-->
+        <module>mls-config-service</module>
+        <module>mls-customer-legacy-service</module>
+        <module>mls-discovery-service</module>
+        <module>mls-legacy-edge-legacy-service</module>
+        <module>mls-mls-edge-service</module>
+        <module>mls-profile-service</module>
+        <module>mls-profile-web</module>
+        <module>mls-user-service</module>
     </modules>
 
     <dependencyManagement>

@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mfres</groupId>
         <artifactId>microservices-friend-recomendation-event-sourcing</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <groupId>com.devcircus.java.microservices.mfres.edgeservice</groupId>
@@ -47,10 +46,6 @@
             <artifactId>xstream</artifactId>
             <version>1.4.11.1</version>
             <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

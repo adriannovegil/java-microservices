@@ -36,11 +36,11 @@
     </properties>
 
     <modules>
-        <!--        <module>discovery-service</module>
-        <module>edge-service</module>
-        <module>friend-service</module>
-        <module>recommendation-service</module>
-        <module>user-service</module>-->
+        <module>mfres-discovery-service</module>
+        <module>mfres-edge-service</module>
+        <module>mfres-friend-service</module>
+        <module>mfres-recommendation-service</module>
+        <module>mfres-user-service</module>
     </modules>
 
     <dependencies>

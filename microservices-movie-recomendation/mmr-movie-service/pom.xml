@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mmr</groupId>
         <artifactId>microservices-movie-recomendation</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <groupId>com.devcircus.java.microservices.mmr.movieservice</groupId>

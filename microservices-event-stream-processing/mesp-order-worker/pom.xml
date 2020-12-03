@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mesp</groupId>
         <artifactId>microservices-event-stream-processing</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <groupId>com.devcircus.java.microservices.mesp.orderworker</groupId>

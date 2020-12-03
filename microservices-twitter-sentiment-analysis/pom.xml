@@ -36,10 +36,10 @@
     </properties>
 
     <modules>
-        <!--<module>mtsa-config-service</module>-->
-        <!--        <module>discovery-service</module>
-        <module>twitter-rank-crawler</module>
-        <module>twitter-rank-web</module>-->
+        <module>mtsa-config-service</module>
+        <module>mtsa-discovery-service</module>
+        <module>mtsa-twitter-rank-crawler-service</module>
+        <module>mtsa-twitter-rank-web</module>
     </modules>
 
     <dependencyManagement>

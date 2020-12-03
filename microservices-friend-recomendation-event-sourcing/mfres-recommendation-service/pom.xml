@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mfres</groupId>
         <artifactId>microservices-friend-recomendation-event-sourcing</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
 
     <groupId>com.devcircus.java.microservices.mfres.recommendationservice</groupId>

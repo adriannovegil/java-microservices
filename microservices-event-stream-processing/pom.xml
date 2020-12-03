@@ -42,13 +42,20 @@
     </properties>
 
     <modules>
-        <!--        <module>account</module>
-        <module>order</module>
-        <module>payment</module>
-        <module>platform-services</module>
-        <module>spring-boot-starters</module>
-        <module>ui</module>
-        <module>warehouse</module>-->
+        <module>mesp-account-web</module>
+        <module>mesp-account-worker</module>
+        <module>mesp-dashboard-web</module>
+        <module>mesp-data-flow-server</module>
+        <module>mesp-discovery-service</module>
+        <module>mesp-load-simulator</module>
+        <module>mesp-order-web</module>
+        <module>mesp-order-worker</module>
+        <module>mesp-payment-web</module>
+        <module>mesp-payment-worker</module>
+        <module>mesp-spring-boot-starter-aws-lambda</module>
+        <module>mesp-spring-boot-starter-data-events</module>
+        <module>mesp-warehouse-web</module>
+        <module>mesp-warehouse-worker</module>
     </modules>
 
     <dependencyManagement>

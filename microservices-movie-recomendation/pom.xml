@@ -36,14 +36,14 @@
     </properties>
 
     <modules>
-        <!--<module>mmr-config-service</module>-->
-        <!--        <module>api-gateway-microservice</module>
-        <module>consul-microservice</module>
-        <module>discovery-microservice</module>
-        <module>movie-microservice</module>
-        <module>movies-ui</module>
-        <module>recommendation-microservice</module>
-        <module>users-microservice</module>        -->
+        <module>mmr-api-gateway-service</module>
+        <module>mmr-config-service</module>
+        <module>mmr-consul-service</module>
+        <module>mmr-discovery-service</module>
+        <module>mmr-movie-service</module>
+        <module>mmr-movies-web</module>
+        <module>mmr-recommendation-service</module>
+        <module>mmr-users-service</module>        
     </modules>
 
     <dependencyManagement>

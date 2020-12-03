@@ -8,7 +8,6 @@
         <groupId>com.devcircus.java.microservices.mls</groupId>
         <artifactId>microservice-legacy-strangler</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
     </parent>
     
     <groupId>com.devcircus.java.microservices.mls.discoveryservice</groupId>
