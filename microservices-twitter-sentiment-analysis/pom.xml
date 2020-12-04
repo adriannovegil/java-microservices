@@ -16,6 +16,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>mtsa-config-service</module>
+<!--        <module>mtsa-discovery-service</module>
+        <module>mtsa-twitter-rank-crawler-service</module>
+        <module>mtsa-twitter-rank-web</module>-->
+    </modules>
+
     <properties>
         <!-- Project encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,13 +41,6 @@
         <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
         <docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>
     </properties>
-
-    <modules>
-        <module>mtsa-config-service</module>
-        <module>mtsa-discovery-service</module>
-        <module>mtsa-twitter-rank-crawler-service</module>
-        <module>mtsa-twitter-rank-web</module>
-    </modules>
 
     <dependencyManagement>
         <dependencies>

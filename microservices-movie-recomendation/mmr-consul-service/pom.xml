@@ -10,8 +10,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mmr.consul-service</groupId>
-    <artifactId>consul-service</artifactId>
+    <groupId>com.devcircus.java.microservices.mmr.consulservice</groupId>
+    <artifactId>mmr-consul-service</artifactId>
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>

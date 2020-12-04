@@ -154,3 +154,6 @@ Desktop.ini
 /microservices-petclinic/spring-petclinic-discovery-server/target/
 /microservices-petclinic/spring-petclinic-vets-service/target/
 /microservices-petclinic/spring-petclinic-visits-service/target/
+/microservice-legacy-strangler/mls-customer-legacy-service/target/
+/microservices-movie-recomendation/mmr-config-service/target/
+/microservices-legacy-strangler/mls-config-service/target/

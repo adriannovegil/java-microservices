@@ -16,6 +16,23 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+<!--        <module>mesp-account-web</module>
+        <module>mesp-account-worker</module>
+        <module>mesp-dashboard-web</module>
+        <module>mesp-data-flow-server</module>
+        <module>mesp-discovery-service</module>
+        <module>mesp-load-simulator</module>
+        <module>mesp-order-web</module>
+        <module>mesp-order-worker</module>
+        <module>mesp-payment-web</module>
+        <module>mesp-payment-worker</module>
+        <module>mesp-spring-boot-starter-aws-lambda</module>
+        <module>mesp-spring-boot-starter-data-events</module>
+        <module>mesp-warehouse-web</module>
+        <module>mesp-warehouse-worker</module>-->
+    </modules>
+
     <properties>
         <!-- Project encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,23 +57,6 @@
         <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
         <docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>
     </properties>
-
-    <modules>
-        <module>mesp-account-web</module>
-        <module>mesp-account-worker</module>
-        <module>mesp-dashboard-web</module>
-        <module>mesp-data-flow-server</module>
-        <module>mesp-discovery-service</module>
-        <module>mesp-load-simulator</module>
-        <module>mesp-order-web</module>
-        <module>mesp-order-worker</module>
-        <module>mesp-payment-web</module>
-        <module>mesp-payment-worker</module>
-        <module>mesp-spring-boot-starter-aws-lambda</module>
-        <module>mesp-spring-boot-starter-data-events</module>
-        <module>mesp-warehouse-web</module>
-        <module>mesp-warehouse-worker</module>
-    </modules>
 
     <dependencyManagement>
         <dependencies>

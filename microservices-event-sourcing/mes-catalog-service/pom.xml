@@ -19,7 +19,8 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-redis</artifactId>
+            <artifactId>spring-boot-starter-redis</artifactId>   
+            <version>1.4.7.RELEASE</version>         
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,10 +33,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-turbine</artifactId>
+            <version>1.4.7.RELEASE</version>         
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

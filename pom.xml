@@ -4,19 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.devcircus</groupId>
+    <groupId>com.devcircus.java.microservices</groupId>
     <artifactId>java-microservices-sandbox</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties> 
     
     <modules>
-        <module>microservice-legacy-strangler</module>
+        <module>microservices-legacy-strangler</module>
         <module>microservices-event-sourcing</module>
         <module>microservices-event-stream-processing</module>
         <module>microservices-friend-recomendation-event-sourcing</module>

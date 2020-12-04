@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mmpp.configserver</groupId>
+    <groupId>com.devcircus.java.microservices.mmpp.configservice</groupId>
     <artifactId>mmpp-config-service</artifactId>
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>

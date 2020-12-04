@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mesp.paymentworker</groupId>
+    <groupId>com.devcircus.java.microservices.mesp.springbootstarterawslambda</groupId>
     <artifactId>mesp-payment-worker</artifactId>    
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>
@@ -40,6 +40,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.statemachine</groupId>

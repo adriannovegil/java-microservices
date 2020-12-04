@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mmr.config-service</groupId>
+    <groupId>com.devcircus.java.microservices.mmr.configservice</groupId>
     <artifactId>mmr-config-service</artifactId>    
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>

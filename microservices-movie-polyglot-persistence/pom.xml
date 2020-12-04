@@ -16,6 +16,16 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>mmpp-config-service</module>
+<!--        <module>mmpp-api-gateway-service</module>        
+        <module>mmpp-discovery-service</module>
+        <module>mmpp-movie-service</module>
+        <module>mmpp-rating-service</module>
+        <module>mmpp-user-service</module>
+        <module>mmpp-web</module>-->
+    </modules>
+
     <properties>
         <!-- Project encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,16 +44,6 @@
         <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
         <docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>
     </properties>
-
-    <modules>
-        <module>mmpp-api-gateway-service</module>
-        <module>mmpp-config-service</module>
-        <module>mmpp-discovery-service</module>
-        <module>mmpp-movie-service</module>
-        <module>mmpp-rating-service</module>
-        <module>mmpp-user-service</module>
-        <module>mmpp-web</module>
-    </modules>
 
     <dependencyManagement>
         <dependencies>

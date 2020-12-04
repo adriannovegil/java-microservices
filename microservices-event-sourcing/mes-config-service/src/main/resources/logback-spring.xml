@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <!-- Required for Loglevel managment into the Spring Petclinic Admin Server-->
+    <jmxConfigurator/>
+    
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} TRACE[%X{traceid}] - %msg%n</Pattern>
+        </layout>
+    </appender>
+    
+    <root level="info">
+        <appender-ref ref="consoleLog"/>        
+    </root>
+</configuration>
