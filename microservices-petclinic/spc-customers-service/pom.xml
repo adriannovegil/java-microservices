@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>org.springframework.samples.petclinic.client</groupId>
-    <artifactId>spring-petclinic-customers-service</artifactId>
+    <artifactId>spc-customers-service</artifactId>
     <name>${project.artifactId}</name>
     <version>2.3.2</version>
     <packaging>jar</packaging>    

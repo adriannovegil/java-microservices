@@ -10,14 +10,14 @@
         <version>2.3.2</version>
     </parent>
 
-    <groupId>org.springframework.samples.petclinic.config</groupId>
-    <artifactId>spring-petclinic-config-server</artifactId>
+    <groupId>org.springframework.samples.petclinic.discovery</groupId>
+    <artifactId>spc-discovery-service</artifactId>
     <name>${project.artifactId}</name>
     <version>2.3.2</version>
     <packaging>jar</packaging>    
 
     <properties>
-        <docker.image.exposed.port>8888</docker.image.exposed.port>
+        <docker.image.exposed.port>8761</docker.image.exposed.port>
         <docker.image.dockerfile.dir>${basedir}/../docker</docker.image.dockerfile.dir>
     </properties>
 
@@ -32,7 +32,11 @@
         <!-- Spring Cloud -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
         <!-- Testing -->
@@ -45,6 +49,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- JAXB is required since Java 9 -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
         </dependency>
     </dependencies>
 

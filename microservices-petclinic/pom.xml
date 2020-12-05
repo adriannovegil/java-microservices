@@ -17,11 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spc-config-server</module>
-        <module>spc-admin-server</module>
+        <module>spc-config-service</module>
+        <module>spc-admin-service</module>
         <module>spc-api-gateway</module>        
         <module>spc-customers-service</module>
-        <module>spc-discovery-server</module>
+        <module>spc-discovery-service</module>
         <module>spc-vets-service</module>
         <module>spc-visits-service</module>
     </modules>
