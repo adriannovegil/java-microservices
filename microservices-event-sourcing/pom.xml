@@ -18,9 +18,9 @@
 
     <modules>
         <module>mes-config-service</module>
-<!--        <module>mes-account-service</module>
-        <module>mes-catalog-service</module>        
         <module>mes-discovery-service</module>
+        <!--        <module>mes-account-service</module>
+        <module>mes-catalog-service</module>                
         <module>mes-edge-service</module>
         <module>mes-inventory-service</module>
         <module>mes-online-store-web</module>
@@ -43,7 +43,7 @@
         <assertj.version>3.11.1</assertj.version>
         <!-- Docker Spotify plugin -->
         <docker.plugin.version>1.2.0</docker.plugin.version>
-        <docker.image.prefix>springcommunity</docker.image.prefix>
+        <docker.image.prefix>mes</docker.image.prefix>
         <docker.image.exposed.port>9090</docker.image.exposed.port>
         <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
         <docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>

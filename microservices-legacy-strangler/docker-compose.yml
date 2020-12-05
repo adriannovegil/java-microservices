@@ -1,2 +1,54 @@
-version: '3.3'
+version: '3.8'
 services:
+
+  # Infrastructure
+  # ============================================================================
+  # Config service
+  config-service:
+    image: mls/config-service
+    container_name: config-service    
+    entrypoint: ["sh", "-c","
+      ./dockerize -timeout=300s -- &&
+      java -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom      
+      org.springframework.boot.loader.JarLauncher"]    
+    ports:
+      - 8888:8888
+
+  # Discovery service
+  discovery-server:
+    image: mls/spring-petclinic-discovery-service
+    container_name: inspectit-discovery-service    
+    depends_on:
+      - config-service      
+    entrypoint: ["sh", "-c","
+      ./dockerize -wait=tcp://config-service:8888 \
+                  -timeout=300s -- &&
+      java -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom      
+      org.springframework.boot.loader.JarLauncher"]    
+    ports:
+      - 8761:8761
+
+  # Services
+  # ============================================================================
+  
+  
+  # Admin service
+  # ============================================================================
+  admin-service:
+    image: mls/admin-service
+    container_name: admin-service
+    depends_on:
+     - config-service     
+    entrypoint: ["sh", "-c","
+      ./dockerize -wait=tcp://config-service:8888 \
+                  -timeout=300s -- &&
+      java -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom      
+      org.springframework.boot.loader.JarLauncher"]
+    volumes:
+      - agent-vol:/agent
+    ports:
+     - 9090:9090
+  
+  
+  # Load
+  # ============================================================================

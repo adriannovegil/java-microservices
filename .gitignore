@@ -157,3 +157,13 @@ Desktop.ini
 /microservice-legacy-strangler/mls-customer-legacy-service/target/
 /microservices-movie-recomendation/mmr-config-service/target/
 /microservices-legacy-strangler/mls-config-service/target/
+/microservices-legacy-strangler/mls-discovery-service/target/
+/microservices-event-sourcing/mes-discovery-service/target/
+/microservices-event-stream-processing/mesp-discovery-service/target/
+/microservices-friend-recomendation-event-sourcing/mfres-discovery-service/target/
+/microservices-movie-polyglot-persistence/mmpp-config-service/target/
+/microservices-movie-polyglot-persistence/mmpp-discovery-service/target/
+/microservices-movie-recomendation/mmr-discovery-service/target/
+/microservices-twitter-sentiment-analysis/mtsa-config-service/target/
+/microservices-twitter-sentiment-analysis/mtsa-discovery-service/target/
+/microservices-petclinic/spc-visits-service/target/

@@ -1,6 +1,12 @@
 spring:
-  application:
-    name: discovery
   cloud:
     config:
-      uri: ${CONFIG_SERVER_URL:http://config:8888}
+      uri: http://localhost:8888
+  application:
+    name: discovery-server
+---
+spring:
+  profiles: docker
+  cloud:
+    config:
+      uri: http://config-service:8888
