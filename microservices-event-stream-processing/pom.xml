@@ -17,7 +17,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mesp-discovery-service</module>
+        <module>mesp-config-service</module>
+        <module>mesp-discovery-service</module>        
         <!--        <module>mesp-account-web</module>
         <module>mesp-account-worker</module>
         <module>mesp-dashboard-web</module>

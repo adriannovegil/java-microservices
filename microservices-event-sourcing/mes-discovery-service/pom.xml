@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.devcircus.java.microservices.mes</groupId>
-        <artifactId>microservices-event-sourcing</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.samples</groupId>
+        <artifactId>spring-petclinic-microservices</artifactId>
+        <version>2.3.2</version>
     </parent>
-    
-    <groupId>com.devcircus.java.microservices.mes.discoveryservice</groupId>
+
+    <groupId>com.devcircus.java.microservices.mes.discovery</groupId>
     <artifactId>mes-discovery-service</artifactId>    
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>    

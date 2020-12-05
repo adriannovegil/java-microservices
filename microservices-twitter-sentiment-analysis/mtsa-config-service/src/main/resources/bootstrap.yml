@@ -1,7 +1,10 @@
+server.port: 8888
 spring:
-  application:
-    name: configuration
-  profiles:
-    active: production
-encrypt:
-  failOnError: false
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/adriannovegil/java-microservices-config/microservices-twitter-sentiment-analysis
+        # Use the File System Backend to avoid git pulling. Enable "native" profile in the Config Server.
+        native:
+          searchLocations: file:///${GIT_REPO}

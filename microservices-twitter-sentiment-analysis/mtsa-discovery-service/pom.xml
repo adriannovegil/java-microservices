@@ -5,16 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.devcircus.java.microservices.mtsa</groupId>
-        <artifactId>microservices-twitter-sentiment-analysis</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.samples</groupId>
+        <artifactId>spring-petclinic-microservices</artifactId>
+        <version>2.3.2</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mtsa.discoveryservice</groupId>
+    <groupId>com.devcircus.java.microservices.mtsa.discovery</groupId>
     <artifactId>mtsa-discovery-service</artifactId>
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>    
     <packaging>jar</packaging>    
+
+    <properties>
+        <docker.image.exposed.port>8761</docker.image.exposed.port>
+        <docker.image.dockerfile.dir>${basedir}/../docker</docker.image.dockerfile.dir>
+    </properties>
 
     <dependencies>
         <!-- Spring Boot -->
@@ -53,20 +58,18 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <profiles>
+        <profile>
+            <id>buildDocker</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.spotify</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <version>${docker.plugin.version}</version>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

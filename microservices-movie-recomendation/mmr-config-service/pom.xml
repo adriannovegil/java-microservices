@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.devcircus.java.microservices.mmr</groupId>
-        <artifactId>microservices-movie-recomendation</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.samples</groupId>
+        <artifactId>spring-petclinic-microservices</artifactId>
+        <version>2.3.2</version>
     </parent>
 
-    <groupId>com.devcircus.java.microservices.mmr.configservice</groupId>
+    <groupId>com.devcircus.java.microservices.mmr.config</groupId>
     <artifactId>mmr-config-service</artifactId>    
     <name>${project.artifactId}</name>
     <version>0.0.1-SNAPSHOT</version>

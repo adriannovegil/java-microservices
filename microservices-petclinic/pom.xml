@@ -18,10 +18,10 @@
 
     <modules>
         <module>spc-config-service</module>
+        <module>spc-discovery-service</module>
         <module>spc-admin-service</module>
         <module>spc-api-gateway</module>        
-        <module>spc-customers-service</module>
-        <module>spc-discovery-service</module>
+        <module>spc-customers-service</module>        
         <module>spc-vets-service</module>
         <module>spc-visits-service</module>
     </modules>

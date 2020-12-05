@@ -167,3 +167,4 @@ Desktop.ini
 /microservices-twitter-sentiment-analysis/mtsa-config-service/target/
 /microservices-twitter-sentiment-analysis/mtsa-discovery-service/target/
 /microservices-petclinic/spc-visits-service/target/
+/microservices-friend-recomendation-event-sourcing/mfres-config-service/target/

@@ -17,6 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>        
+        <module>mfres-config-service</module>
         <module>mfres-discovery-service</module>
         <!--    <module>mfres-edge-service</module>
         <module>mfres-friend-service</module>
