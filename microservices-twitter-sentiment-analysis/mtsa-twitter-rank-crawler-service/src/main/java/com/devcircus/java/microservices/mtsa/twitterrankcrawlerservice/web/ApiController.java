@@ -1,7 +1,7 @@
 package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.web;
 
-import org.kbastani.tweet.TwitterService;
-import org.kbastani.user.User;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet.TwitterService;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

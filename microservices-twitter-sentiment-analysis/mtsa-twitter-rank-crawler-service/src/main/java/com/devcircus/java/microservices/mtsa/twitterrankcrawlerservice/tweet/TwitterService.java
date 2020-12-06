@@ -1,19 +1,13 @@
 package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet;
 
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.HasEntityRepository;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.UserRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.cloud.language.v1.Entity;
 import com.google.cloud.language.v1.Sentiment;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.kbastani.math.Statistics;
-import org.kbastani.nlp.TextAnalysis;
-import org.kbastani.text.HasEntity;
-import org.kbastani.text.HasEntityRepository;
-import org.kbastani.text.TextEntity;
-import org.kbastani.user.SentimentResult;
-import org.kbastani.user.User;
-import org.kbastani.user.UserRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.util.IterableUtils;

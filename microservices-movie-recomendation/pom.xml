@@ -40,7 +40,7 @@
         <!-- Assertj -->
         <assertj.version>3.11.1</assertj.version>
         <!-- Docker Spotify plugin -->
-        <docker.plugin.version>1.2.0</docker.plugin.version>
+        <docker.plugin.version>1.2.2</docker.plugin.version>
         <docker.image.prefix>mmr</docker.image.prefix>
         <docker.image.exposed.port>9090</docker.image.exposed.port>
         <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>

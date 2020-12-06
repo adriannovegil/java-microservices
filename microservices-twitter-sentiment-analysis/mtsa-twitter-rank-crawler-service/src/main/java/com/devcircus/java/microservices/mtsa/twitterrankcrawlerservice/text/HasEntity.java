@@ -1,6 +1,6 @@
 package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text;
 
-import org.kbastani.tweet.Tweet;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet.Tweet;
 import org.neo4j.ogm.annotation.*;
 
 @RelationshipEntity(type = "HAS_ENTITY")
