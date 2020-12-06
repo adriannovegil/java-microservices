@@ -5,8 +5,8 @@ services:
   # ============================================================================
   # Config service
   config-service:
-    image: spc/config-service
-    container_name: config-service    
+    image: spc/spc-config-service
+    container_name: spc-config-service    
     entrypoint: ["sh", "-c","
       ./dockerize -timeout=300s -- &&
       java -XX:+UnlockExperimentalVMOptions -Djava.security.egd=file:/dev/./urandom      
@@ -16,8 +16,8 @@ services:
 
   # Discovery service
   discovery-service:
-    image: spc/spring-petclinic-discovery-service
-    container_name: inspectit-discovery-service    
+    image: spc/spc-discovery-service
+    container_name: spc-discovery-service    
     depends_on:
       - config-service      
     entrypoint: ["sh", "-c","
@@ -35,8 +35,8 @@ services:
   # Admin service
   # ============================================================================
   admin-service:
-    image: spc/admin-service
-    container_name: admin-service
+    image: spc/spc-admin-service
+    container_name: spc-admin-service
     depends_on:
      - config-service     
     entrypoint: ["sh", "-c","
@@ -48,7 +48,6 @@ services:
       - agent-vol:/agent
     ports:
      - 9090:9090
-  
   
   # Load
   # ============================================================================

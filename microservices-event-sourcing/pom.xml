@@ -19,6 +19,7 @@
     <modules>
         <module>mes-config-service</module>
         <module>mes-discovery-service</module>
+        <module>mes-admin-service</module>
         <!--        <module>mes-account-service</module>
         <module>mes-catalog-service</module>                
         <module>mes-edge-service</module>

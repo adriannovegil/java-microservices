@@ -168,3 +168,10 @@ Desktop.ini
 /microservices-twitter-sentiment-analysis/mtsa-discovery-service/target/
 /microservices-petclinic/spc-visits-service/target/
 /microservices-friend-recomendation-event-sourcing/mfres-config-service/target/
+/microservices-twitter-sentiment-analysis/mtsa-admin-service/target/
+/microservices-event-sourcing/mes-admin-service/target/
+/microservices-event-stream-processing/mesp-admin-service/target/
+/microservices-friend-recomendation-event-sourcing/mfres-admin-service/target/
+/microservices-legacy-strangler/mls-admin-service/target/
+/microservices-movie-polyglot-persistence/mmpp-admin-service/target/
+/microservices-movie-recomendation/mmr-admin-service/target/

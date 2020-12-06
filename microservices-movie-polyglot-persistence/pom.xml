@@ -19,6 +19,7 @@
     <modules>
         <module>mmpp-config-service</module>
         <module>mmpp-discovery-service</module>
+        <module>mmpp-admin-service</module>
         <!--        <module>mmpp-api-gateway-service</module>                
         <module>mmpp-movie-service</module>
         <module>mmpp-rating-service</module>
