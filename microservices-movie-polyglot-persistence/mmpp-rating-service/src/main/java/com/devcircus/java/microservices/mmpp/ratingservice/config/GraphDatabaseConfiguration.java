@@ -1,4 +1,4 @@
-package service.config;
+package com.devcircus.java.microservices.mmpp.ratingservice.config;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;

@@ -12,29 +12,56 @@ public class TextEntity {
     private Long id;
     private String name;
 
+    /**
+     * 
+     */
     public TextEntity() {
     }
 
+    /**
+     * 
+     * @param name 
+     */
     public TextEntity(String name) {
         this.name = name;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public Long getId() {
         return id;
     }
 
+    /**
+     * 
+     * @param id 
+     */
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * 
+     * @param name 
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "TextEntity{"

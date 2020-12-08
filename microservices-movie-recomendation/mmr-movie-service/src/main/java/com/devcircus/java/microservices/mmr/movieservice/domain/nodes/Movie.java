@@ -1,4 +1,4 @@
-package data.domain.nodes;
+package com.devcircus.java.microservices.mmr.movieservice.domain.nodes;
 
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.NodeEntity;

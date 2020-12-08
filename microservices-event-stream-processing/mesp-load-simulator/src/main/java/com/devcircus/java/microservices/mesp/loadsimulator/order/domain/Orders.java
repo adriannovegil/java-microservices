@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.order.domain;
 
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;

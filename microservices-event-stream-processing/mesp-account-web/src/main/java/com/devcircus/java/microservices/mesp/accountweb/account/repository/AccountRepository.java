@@ -1,4 +1,4 @@
-package demo.account.repository;
+package com.devcircus.java.microservices.mesp.accountweb.account.repository;
 
 import demo.account.domain.Account;
 import org.springframework.data.jpa.repository.JpaRepository;

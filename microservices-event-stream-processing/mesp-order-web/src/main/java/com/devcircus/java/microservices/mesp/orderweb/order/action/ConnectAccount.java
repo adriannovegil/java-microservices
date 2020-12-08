@@ -1,4 +1,4 @@
-package demo.order.action;
+package com.devcircus.java.microservices.mesp.orderweb.order.action;
 
 import demo.domain.Action;
 import demo.order.domain.Order;

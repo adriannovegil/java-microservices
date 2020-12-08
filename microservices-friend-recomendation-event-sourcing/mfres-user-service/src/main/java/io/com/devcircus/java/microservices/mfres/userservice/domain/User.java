@@ -1,4 +1,4 @@
-package io.example.domain;
+package io.com.devcircus.java.microservices.mfres.userservice.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;

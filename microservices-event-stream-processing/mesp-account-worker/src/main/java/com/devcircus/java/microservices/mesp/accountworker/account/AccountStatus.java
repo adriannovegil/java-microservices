@@ -1,4 +1,4 @@
-package demo.account;
+package com.devcircus.java.microservices.mesp.accountworker.account;
 
 public enum AccountStatus {
     ACCOUNT_CREATED,

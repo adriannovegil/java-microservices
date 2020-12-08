@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.domain;
 
 import org.springframework.hateoas.ResourceSupport;
 

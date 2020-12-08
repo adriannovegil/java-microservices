@@ -1,4 +1,4 @@
-package demo.address;
+package com.devcircus.java.microservices.mes.orderservice.address;
 
 import java.io.Serializable;
 

@@ -1,6 +1,4 @@
-package demo.warehouse.domain;
-
-import demo.event.Event;
+package com.devcircus.java.microservices.mesp.orderweb.warehouse.domain;
 
 public class WarehouseEvent extends Event<Warehouse, WarehouseEventType, Long> {
 

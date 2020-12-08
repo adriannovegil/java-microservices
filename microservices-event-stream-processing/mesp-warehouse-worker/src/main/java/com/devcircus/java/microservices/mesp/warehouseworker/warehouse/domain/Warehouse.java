@@ -1,8 +1,8 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain;
 
+import com.devcircus.java.microservices.mesp.warehouseworker.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvent;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.warehouse.event.WarehouseEvent;
 import org.springframework.hateoas.Link;
 
 import java.util.ArrayList;

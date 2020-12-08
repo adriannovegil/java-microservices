@@ -1,4 +1,4 @@
-package demo.inventory.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.inventory.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import demo.domain.AbstractEntity;

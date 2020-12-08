@@ -10,6 +10,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class TwitterCrawlerApplication {
 
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         new SpringApplicationBuilder(TwitterCrawlerApplication.class).run(args);
     }

@@ -1,6 +1,5 @@
 package com.devcircus.java.microservices.mesp.springbootstarterdataevents.event;
 
-import demo.domain.Aggregate;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.hateoas.core.EvoInflectorRelProvider;

@@ -1,5 +1,6 @@
-package service;
+package com.devcircus.java.microservices.mmpp.userservice;
 
+import com.devcircus.java.microservices.mmpp.userservice.data.domain.entity.User;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,7 +16,6 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceProcessor;
-import service.data.domain.entity.User;
 
 @SpringBootApplication
 @EnableNeo4jRepositories

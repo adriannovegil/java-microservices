@@ -17,12 +17,13 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mtsa-config-service</module>
         <module>mtsa-discovery-service</module>
         <module>mtsa-admin-service</module>
-        <!--        
-        <module>mtsa-twitter-rank-crawler-service</module>
-        <module>mtsa-twitter-rank-web</module>-->
+        <!-- Services -->
+        <!--<module>mtsa-twitter-rank-crawler-service</module>-->
+        <module>mtsa-twitter-rank-web</module>
     </modules>
 
     <properties>

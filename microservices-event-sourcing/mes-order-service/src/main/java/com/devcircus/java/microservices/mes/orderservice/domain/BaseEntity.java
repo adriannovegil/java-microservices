@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mes.orderservice.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.data.annotation.CreatedDate;

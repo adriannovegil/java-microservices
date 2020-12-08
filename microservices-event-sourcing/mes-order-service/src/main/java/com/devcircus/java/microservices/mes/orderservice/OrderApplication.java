@@ -1,6 +1,6 @@
-package demo;
+package com.devcircus.java.microservices.mes.orderservice;
 
-import demo.config.DatabaseInitializer;
+import com.devcircus.java.microservices.mes.orderservice.config.DatabaseInitializer;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,12 +19,12 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.stereotype.Component;
 
-@SpringBootApplication
 @EnableMongoRepositories
 @EnableMongoAuditing
 @EnableEurekaClient
 @EnableResourceServer
 @EnableOAuth2Client
+@SpringBootApplication
 public class OrderApplication {
 
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package demo.invoice;
+package com.devcircus.java.microservices.mes.orderservice.invoice;
 
-import demo.address.Address;
-import demo.address.AddressType;
-import demo.domain.BaseEntity;
-import demo.order.Order;
+import com.devcircus.java.microservices.mes.orderservice.address.Address;
+import com.devcircus.java.microservices.mes.orderservice.address.AddressType;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
+import com.devcircus.java.microservices.mes.orderservice.order.Order;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 

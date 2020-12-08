@@ -1,14 +1,10 @@
-package demo.payment.domain;
-
-import demo.domain.Module;
-import demo.event.EventService;
-import demo.payment.event.PaymentEvent;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.domain;
 
 @org.springframework.stereotype.Service
 public class PaymentModule extends Module<Payment> {
 
     private final PaymentService paymentService;
-    private final EventService<PaymentEvent, Long> eventService;
+    private final EventService<, Long> eventService;
 
     public PaymentModule(PaymentService paymentService, EventService<PaymentEvent, Long> eventService) {
         this.paymentService = paymentService;

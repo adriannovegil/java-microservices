@@ -1,4 +1,4 @@
-package application;
+package com.devcircus.java.microservices.mmr.moviesweb;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

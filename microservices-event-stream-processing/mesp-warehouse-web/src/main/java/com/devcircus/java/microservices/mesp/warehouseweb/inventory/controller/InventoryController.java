@@ -1,13 +1,10 @@
-package demo.inventory.controller;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.controller;
 
-import demo.event.EventService;
-import demo.event.Events;
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryService;
-import demo.inventory.domain.InventoryStatus;
-import demo.inventory.event.InventoryEvent;
-import demo.reservation.controller.ReservationController;
-import demo.warehouse.controller.WarehouseController;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.controller.WarehouseController;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.hateoas.LinkBuilder;
 import org.springframework.hateoas.Resource;

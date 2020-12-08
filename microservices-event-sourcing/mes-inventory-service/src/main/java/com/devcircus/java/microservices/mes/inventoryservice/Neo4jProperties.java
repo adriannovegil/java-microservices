@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mes.inventoryservice;
 
 import org.apache.commons.logging.LogFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;

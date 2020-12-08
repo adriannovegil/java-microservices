@@ -1,8 +1,7 @@
-package demo.inventory.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain;
 
-import demo.domain.Service;
-import demo.inventory.repository.InventoryRepository;
-import demo.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.repository.InventoryRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
 import org.apache.log4j.Logger;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;

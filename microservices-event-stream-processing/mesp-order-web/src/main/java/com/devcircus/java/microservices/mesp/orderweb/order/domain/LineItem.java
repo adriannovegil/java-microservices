@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.orderweb.order.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import demo.domain.Entity;

@@ -1,7 +1,6 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain;
 
-import demo.domain.Module;
-import demo.warehouse.event.WarehouseEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event.WarehouseEventService;
 
 @org.springframework.stereotype.Service
 public class WarehouseModule extends Module<Warehouse> {

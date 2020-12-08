@@ -1,6 +1,5 @@
 package com.devcircus.java.microservices.mesp.springbootstarterdataevents.event;
 
-import demo.domain.Aggregate;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

@@ -1,17 +1,13 @@
-package demo.inventory.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.action.ReserveInventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.action.UpdateInventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.controller.InventoryController;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain.Warehouse;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.domain.Aggregate;
-import demo.domain.Command;
-import demo.domain.Module;
-import demo.inventory.action.ReserveInventory;
-import demo.inventory.action.UpdateInventoryStatus;
-import demo.inventory.controller.InventoryController;
-import demo.inventory.event.InventoryEvent;
-import demo.reservation.domain.Reservation;
-import demo.warehouse.domain.Warehouse;
 import org.springframework.hateoas.Link;
 
 import javax.persistence.*;

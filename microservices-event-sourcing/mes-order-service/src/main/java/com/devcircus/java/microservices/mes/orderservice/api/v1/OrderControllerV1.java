@@ -1,8 +1,8 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mes.orderservice.api.v1;
 
-import demo.order.LineItem;
-import demo.order.Order;
-import demo.order.OrderEvent;
+import com.devcircus.java.microservices.mes.orderservice.order.LineItem;
+import com.devcircus.java.microservices.mes.orderservice.order.Order;
+import com.devcircus.java.microservices.mes.orderservice.order.OrderEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

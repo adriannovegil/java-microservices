@@ -1,4 +1,4 @@
-package service.models;
+package com.devcircus.java.microservices.mmpp.web.models;
 
 public class Product {
 

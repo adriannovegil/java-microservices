@@ -1,13 +1,12 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mes.userservice.api.v1;
 
-import demo.user.User;
+import com.devcircus.java.microservices.mes.userservice.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.security.Principal;
 import java.util.Optional;
 

@@ -1,6 +1,6 @@
 package com.devcircus.java.microservices.mesp.springbootstarterdataevents.event;
 
-import demo.domain.Aggregate;
+import com.devcircus.java.microservices.mesp.springbootstarterdataevents.domain.Aggregate;
 import org.springframework.hateoas.Link;
 
 import java.io.Serializable;

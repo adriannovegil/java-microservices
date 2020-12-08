@@ -1,4 +1,4 @@
-package demo.order;
+package com.devcircus.java.microservices.mes.orderservice.order;
 
 public enum OrderEventType {
     PURCHASED,

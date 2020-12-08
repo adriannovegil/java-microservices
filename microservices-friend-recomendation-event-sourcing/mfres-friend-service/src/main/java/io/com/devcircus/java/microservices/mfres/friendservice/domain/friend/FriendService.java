@@ -1,6 +1,6 @@
-package io.example.domain.friend;
+package io.com.devcircus.java.microservices.mfres.friendservice.domain.friend;
 
-import io.example.domain.user.UserClient;
+import io.com.devcircus.java.microservices.mfres.friendservice.domain.user.UserClient;
 import org.reactivestreams.Publisher;
 import org.springframework.data.r2dbc.function.DatabaseClient;
 import org.springframework.data.r2dbc.function.TransactionalDatabaseClient;

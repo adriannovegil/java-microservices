@@ -1,8 +1,8 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.event;
 
-import demo.payment.Payment;
-import demo.payment.PaymentStatus;
-import demo.state.StateMachineService;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.payment.Payment;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.payment.PaymentStatus;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.state.StateMachineService;
 import org.apache.log4j.Logger;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.client.Traverson;

@@ -1,4 +1,4 @@
-package io.example.domain.friend;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.friend;
 
 import java.sql.Timestamp;
 

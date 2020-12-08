@@ -1,4 +1,4 @@
-package demo.inventory;
+package com.devcircus.java.microservices.mes.inventoryservice.inventory;
 
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.GraphRepository;

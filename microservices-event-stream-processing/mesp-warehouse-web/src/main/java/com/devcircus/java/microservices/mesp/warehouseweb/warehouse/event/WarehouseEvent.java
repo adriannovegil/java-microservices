@@ -1,9 +1,8 @@
-package demo.warehouse.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.controller.WarehouseController;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain.Warehouse;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.event.Event;
-import demo.warehouse.controller.WarehouseController;
-import demo.warehouse.domain.Warehouse;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

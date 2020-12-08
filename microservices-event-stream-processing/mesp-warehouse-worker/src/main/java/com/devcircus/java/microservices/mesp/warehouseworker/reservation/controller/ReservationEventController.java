@@ -1,7 +1,7 @@
-package demo.reservation.controller;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.controller;
 
-import demo.reservation.ReservationStateFactory;
-import demo.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.ReservationStateFactory;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEvent;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

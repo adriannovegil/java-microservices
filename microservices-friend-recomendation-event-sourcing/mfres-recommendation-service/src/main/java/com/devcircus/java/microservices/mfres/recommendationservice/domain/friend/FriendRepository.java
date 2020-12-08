@@ -1,8 +1,8 @@
-package io.example.domain.friend;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.friend;
 
-import io.example.domain.friend.entity.Friend;
-import io.example.domain.friend.entity.RankedUser;
-import io.example.domain.user.entity.User;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.friend.entity.Friend;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.friend.entity.RankedUser;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.user.entity.User;
 import org.springframework.data.neo4j.annotation.Query;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.data.util.Streamable;

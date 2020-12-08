@@ -1,4 +1,4 @@
-package io.example.domain.user;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.user;
 
 import io.example.domain.user.entity.User;
 

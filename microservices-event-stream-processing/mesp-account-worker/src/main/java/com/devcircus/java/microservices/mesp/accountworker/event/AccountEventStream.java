@@ -1,4 +1,4 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.accountworker.event;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.stream.annotation.EnableBinding;

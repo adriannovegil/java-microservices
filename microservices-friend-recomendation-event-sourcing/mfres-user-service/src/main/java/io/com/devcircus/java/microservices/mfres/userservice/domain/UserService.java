@@ -1,4 +1,4 @@
-package io.example.domain;
+package io.com.devcircus.java.microservices.mfres.userservice.domain;
 
 import org.springframework.data.r2dbc.function.DatabaseClient;
 import org.springframework.data.r2dbc.function.TransactionalDatabaseClient;

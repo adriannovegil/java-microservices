@@ -17,9 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mmpp-config-service</module>
         <module>mmpp-discovery-service</module>
         <module>mmpp-admin-service</module>
+        <!-- Services -->
         <!--        <module>mmpp-api-gateway-service</module>                
         <module>mmpp-movie-service</module>
         <module>mmpp-rating-service</module>

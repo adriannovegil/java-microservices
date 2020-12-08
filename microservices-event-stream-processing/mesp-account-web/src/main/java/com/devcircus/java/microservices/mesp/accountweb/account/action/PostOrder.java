@@ -1,9 +1,8 @@
-package demo.account.action;
+package com.devcircus.java.microservices.mesp.accountweb.account.action;
 
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.Account;
+import com.devcircus.java.microservices.mesp.accountweb.order.domain.Order;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import demo.account.domain.Account;
-import demo.domain.Action;
-import demo.order.domain.Order;
 import org.apache.log4j.Logger;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.client.Traverson;

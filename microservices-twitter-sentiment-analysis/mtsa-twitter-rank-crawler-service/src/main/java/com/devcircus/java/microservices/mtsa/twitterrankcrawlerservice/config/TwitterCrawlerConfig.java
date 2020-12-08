@@ -21,16 +21,6 @@ public class TwitterCrawlerConfig {
 
     private final Log logger = LogFactory.getLog(TwitterCrawlerConfig.class);
 
-    @Bean
-    Queue follows() {
-        return new Queue("twitter.follows", true, false, false);
-    }
-
-    @Bean
-    Queue followers() {
-        return new Queue("twitter.followers", true, false, false);
-    }
-
     @Value("${spring.social.twitter.appId}")
     private String appId;
 
@@ -43,6 +33,32 @@ public class TwitterCrawlerConfig {
     @Value("${spring.social.twitter.accessTokenSecret}")
     private String accessTokenSecret;
 
+    /**
+     * 
+     * @return 
+     */
+    @Bean
+    Queue follows() {
+        return new Queue("twitter.follows", true, false, false);
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    @Bean
+    Queue followers() {
+        return new Queue("twitter.followers", true, false, false);
+    }
+
+    /**
+     * 
+     * @param appId
+     * @param appSecret
+     * @param accessToken
+     * @param accessTokenSecret
+     * @return 
+     */
     @Bean
     Twitter twitter(final @Value("${spring.social.twitter.appId}") String appId,
             final @Value("${spring.social.twitter.appSecret}") String appSecret,
@@ -54,6 +70,11 @@ public class TwitterCrawlerConfig {
         return twitter;
     }
 
+    /**
+     * 
+     * @param sessionFactory
+     * @return 
+     */
     @Bean
     CommandLineRunner commandLineRunner(SessionFactory sessionFactory) {
         return (args) -> {

@@ -1,20 +1,16 @@
-package demo.warehouse.config;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.config;
 
-import demo.warehouse.domain.Warehouse;
-import demo.warehouse.domain.WarehouseStatus;
-import demo.warehouse.event.WarehouseEvent;
-import demo.warehouse.event.WarehouseEventProcessor;
-import demo.warehouse.event.WarehouseEventType;
-import demo.warehouse.event.WarehouseEvents;
-import demo.warehouse.function.WarehouseCreated;
-import demo.warehouse.function.WarehouseFunction;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.WarehouseStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.function.WarehouseFunction;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.client.Traverson;
 import org.springframework.statemachine.StateContext;
-import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.action.Action;
 import org.springframework.statemachine.config.EnableStateMachineFactory;
 import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter;

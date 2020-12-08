@@ -1,4 +1,4 @@
-package data;
+package com.devcircus.java.microservices.mmr.recommendationservice;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;

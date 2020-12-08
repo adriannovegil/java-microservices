@@ -1,8 +1,8 @@
-package demo;
+package com.devcircus.java.microservices.mes.inventoryservice;
 
-import demo.catalog.Catalog;
-import demo.config.DatabaseInitializer;
-import demo.product.Product;
+import com.devcircus.java.microservices.mes.inventoryservice.catalog.Catalog;
+import com.devcircus.java.microservices.mes.inventoryservice.config.DatabaseInitializer;
+import com.devcircus.java.microservices.mes.inventoryservice.product.Product;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,11 +17,11 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SpringBootApplication
 @EnableNeo4jRepositories
 @EnableConfigurationProperties
 @EnableTransactionManagement
 @EnableEurekaClient
+@SpringBootApplication
 public class InventoryApplication {
 
     public static void main(String[] args) {

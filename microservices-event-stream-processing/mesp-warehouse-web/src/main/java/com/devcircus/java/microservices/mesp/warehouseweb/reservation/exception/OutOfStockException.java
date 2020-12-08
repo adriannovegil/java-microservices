@@ -1,4 +1,4 @@
-package demo.reservation.exception;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.exception;
 
 public class OutOfStockException extends RuntimeException {
 

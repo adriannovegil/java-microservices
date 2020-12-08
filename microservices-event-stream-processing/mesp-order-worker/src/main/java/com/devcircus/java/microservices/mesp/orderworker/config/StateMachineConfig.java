@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.orderworker.config;
 
 import demo.function.*;
 import demo.order.domain.Order;

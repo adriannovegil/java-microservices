@@ -1,7 +1,6 @@
-package demo.user;
+package com.devcircus.java.microservices.mes.userservice.user;
 
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mes.userservice.data.BaseEntity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

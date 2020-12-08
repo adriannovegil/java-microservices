@@ -1,4 +1,4 @@
-package demo.state;
+package com.devcircus.java.microservices.mesp.accountworker.state;
 
 import demo.account.AccountStatus;
 import demo.event.AccountEventType;

@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.order.domain;
 
 public class LineItem {
 

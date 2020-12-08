@@ -1,4 +1,4 @@
-package service;
+package com.devcircus.java.microservices.mmpp.web;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

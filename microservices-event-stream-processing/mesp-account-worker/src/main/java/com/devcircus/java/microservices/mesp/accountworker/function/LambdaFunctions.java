@@ -1,4 +1,4 @@
-package demo.function;
+package com.devcircus.java.microservices.mesp.accountworker.function;
 
 import com.amazonaws.services.lambda.invoke.LambdaFunction;
 import com.amazonaws.services.lambda.model.LogType;

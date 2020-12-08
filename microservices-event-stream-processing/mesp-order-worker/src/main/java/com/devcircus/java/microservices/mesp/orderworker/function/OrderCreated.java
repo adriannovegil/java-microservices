@@ -1,9 +1,9 @@
-package demo.function;
+package com.devcircus.java.microservices.mesp.orderworker.function;
 
-import demo.order.event.OrderEvent;
-import demo.order.event.OrderEventType;
-import demo.order.domain.Order;
-import demo.order.domain.OrderStatus;
+import com.devcircus.java.microservices.mesp.orderworker.order.domain.Order;
+import com.devcircus.java.microservices.mesp.orderworker.order.domain.OrderStatus;
+import com.devcircus.java.microservices.mesp.orderworker.order.event.OrderEvent;
+import com.devcircus.java.microservices.mesp.orderworker.order.event.OrderEventType;
 import org.apache.log4j.Logger;
 import org.springframework.statemachine.StateContext;
 

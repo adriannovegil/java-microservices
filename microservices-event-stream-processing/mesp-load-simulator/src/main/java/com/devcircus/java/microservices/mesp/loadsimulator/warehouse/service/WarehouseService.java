@@ -1,4 +1,4 @@
-package demo.warehouse.service;
+package com.devcircus.java.microservices.mesp.loadsimulator.warehouse.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.inventory.domain.Inventory;

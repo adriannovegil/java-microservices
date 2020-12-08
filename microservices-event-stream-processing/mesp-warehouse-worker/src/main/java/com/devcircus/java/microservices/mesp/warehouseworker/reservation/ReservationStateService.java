@@ -1,7 +1,7 @@
-package demo.reservation;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation;
 
-import demo.reservation.domain.ReservationStatus;
-import demo.reservation.event.ReservationEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain.ReservationStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEventType;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package demo.v1;
+package com.devcircus.java.microservices.mes.inventoryservice.v1;
 
-import demo.product.Product;
+import com.devcircus.java.microservices.mes.inventoryservice.product.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

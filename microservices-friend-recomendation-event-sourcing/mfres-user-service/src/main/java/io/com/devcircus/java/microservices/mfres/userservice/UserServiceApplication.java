@@ -1,4 +1,4 @@
-package io.example;
+package io.com.devcircus.java.microservices.mfres.userservice;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

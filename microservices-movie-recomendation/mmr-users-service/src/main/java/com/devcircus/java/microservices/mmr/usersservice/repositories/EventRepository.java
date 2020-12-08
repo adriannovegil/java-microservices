@@ -1,4 +1,4 @@
-package data.repositories;
+package com.devcircus.java.microservices.mmr.usersservice.repositories;
 
 import data.domain.nodes.Event;
 import org.springframework.data.repository.PagingAndSortingRepository;

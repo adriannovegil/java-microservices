@@ -1,10 +1,9 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.orderworker.order.domain;
 
+import com.devcircus.java.microservices.mesp.orderworker.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.orderworker.order.event.OrderEvent;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.order.event.OrderEvent;
 import org.springframework.hateoas.Link;
-
 import java.util.HashSet;
 import java.util.Set;
 

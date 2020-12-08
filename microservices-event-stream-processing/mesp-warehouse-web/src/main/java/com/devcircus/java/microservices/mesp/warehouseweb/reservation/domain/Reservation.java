@@ -1,18 +1,15 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.action.ConnectInventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.action.ConnectOrder;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.action.ReleaseInventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.controller.ReservationController;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain.Warehouse;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.domain.Aggregate;
-import demo.domain.Command;
-import demo.domain.Module;
-import demo.inventory.domain.Inventory;
-import demo.reservation.action.ConnectOrder;
-import demo.reservation.action.ConnectInventory;
-import demo.reservation.action.ReleaseInventory;
-import demo.reservation.controller.ReservationController;
-import demo.reservation.event.ReservationEvent;
-import demo.warehouse.domain.Warehouse;
 import org.springframework.hateoas.Link;
 
 import javax.persistence.*;

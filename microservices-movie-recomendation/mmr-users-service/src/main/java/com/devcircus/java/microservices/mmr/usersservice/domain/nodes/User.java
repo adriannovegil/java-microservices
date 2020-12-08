@@ -1,6 +1,6 @@
-package data.domain.nodes;
+package com.devcircus.java.microservices.mmr.usersservice.domain.nodes;
 
-import data.domain.rels.Action;
+import com.devcircus.java.microservices.mmr.usersservice.domain.rels.Action;
 import org.neo4j.graphdb.Direction;
 import org.springframework.data.neo4j.annotation.*;
 

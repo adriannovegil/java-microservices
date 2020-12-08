@@ -1,7 +1,13 @@
 package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet;
 
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.math.Statistics;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.nlp.TextAnalysis;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.HasEntity;
 import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.HasEntityRepository;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.TextEntity;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.SentimentResult;
 import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.UserRepository;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.User;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.cloud.language.v1.Entity;
@@ -38,6 +44,16 @@ public class TwitterService {
     private static final Integer MAX_FOLLOWS = 50000;
     private static final Integer MAX_FOLLOWERS = 50000;
 
+    /**
+     * 
+     * @param twitter
+     * @param userRepository
+     * @param tweetRepository
+     * @param tweetedRepository
+     * @param hasEntityRepository
+     * @param rabbitTemplate
+     * @param objectMapper 
+     */
     @Autowired
     public TwitterService(Twitter twitter, UserRepository userRepository, TweetRepository tweetRepository,
             TweetedRepository tweetedRepository, HasEntityRepository hasEntityRepository,
@@ -51,9 +67,13 @@ public class TwitterService {
         this.objectMapper = objectMapper;
     }
 
+    /**
+     * 
+     * @param screenName
+     * @return 
+     */
     public User discoverUserByScreenName(String screenName) {
         User user;
-
         try {
             user = Optional.of(twitter.users().showUser(screenName))
                     .map(User::new)
@@ -61,19 +81,20 @@ public class TwitterService {
         } catch (TwitterException e) {
             throw new RuntimeException("Error discovering new user...", e);
         }
-
         // Set the user's default values
         user.setPagerank(0f);
         user.setImported(true);
-
         user = getUser(user);
-
         return user;
     }
 
+    /**
+     * 
+     * @param profileId
+     * @return 
+     */
     public User discoverUserByProfileId(Long profileId) {
         User user;
-
         try {
             user = Optional.of(twitter.users().showUser(profileId))
                     .map(User::new)
@@ -83,12 +104,15 @@ public class TwitterService {
         } catch (TwitterException e) {
             throw new RuntimeException("User discovery failed...", e);
         }
-
         return user;
     }
 
+    /**
+     * 
+     * @param user
+     * @return 
+     */
     public User scanUserActivity(User user) {
-
         log.info(String.format("Scanning user activity for %s...", user.getScreenName()));
         List<Tweet> tweets = new ArrayList<>();
         List<Status> unfilteredTweets = new ArrayList<>();
@@ -109,19 +133,15 @@ public class TwitterService {
                 unfilteredTweets = Optional.of(twitter.timelines().getUserTimeline(user.getScreenName(),
                         new Paging(1, 20,
                                 Integer.MAX_VALUE, user.getLastImportedTweetId()))).get();
-
                 tweets = unfilteredTweets.stream()
                         .filter(t -> !t.isRetweet() && (!t.getText().startsWith("@")))
                         .map(t -> new Tweet(t.getId(), t.getText(), finalUser1.getProfileId(), t.getCreatedAt()))
                         .collect(Collectors.toList());
-
             }
         } catch (Exception ex) {
             log.error("Error fetching timeline for user", ex);
         }
-
         List<Tweet> newTweets = new ArrayList<>();
-
         if (tweets.size() > 0) {
             try {
                 log.info(String.format("Analyzing sentiment for %s tweets by %s", tweets.size(), user.getScreenName()));
@@ -143,25 +163,18 @@ public class TwitterService {
                         t.setSentiment(0.0);
                         t.setMagnitude(0.0);
                     }
-
                     log.info(String.format("%s of %s tweets analyzed for user %s...", i + 1, finalTweets.size(),
                             finalUser3.getScreenName()));
                 });
-
                 log.info(String.format("Saving %s analyzed tweets for user %s...", finalTweets.size(),
                         user.getScreenName()));
-
                 newTweets = IterableUtils.toList(Optional.of(tweetRepository
                         .saveAll(new ArrayList<>(finalTweets))).orElse(finalTweets));
-
                 User finalUser = user;
-
                 log.info(String.format("Saving %s new tweet relationships for user %s...", newTweets.size(),
                         user.getScreenName()));
-
                 tweetedRepository.saveTweetedRelationships(newTweets.stream()
                         .map(t -> new Tweeted(finalUser, t)).collect(Collectors.toSet()));
-
                 user.setLastImportedTweetId(newTweets.stream()
                         .sorted(Comparator.comparing(Tweet::getTweetId))
                         .limit(1)
@@ -170,7 +183,6 @@ public class TwitterService {
             } catch (Exception ex) {
                 throw new RuntimeException("Error saving tweets to Neo4j", ex);
             }
-
             try {
                 log.info(String.format("Analyzing extracted entities for %s tweets by %s...", newTweets.size(),
                         user.getScreenName()));
@@ -188,14 +200,12 @@ public class TwitterService {
                             Optional.of(e.getSentiment().getScore()).orElse(0f).doubleValue(),
                             Optional.of(e.getSentiment().getMagnitude()).orElse(0f).doubleValue()));
                 }).collect(Collectors.toList());
-
                 // Save all entities to database
                 hasEntityRepository.saveHasEntityRelationships(new HashSet<>(entityList));
             } catch (Exception ex) {
                 log.error("Error contacting the GCP NLP API to extract sentiment", ex);
             }
         }
-
         user.setLastImportedTweetId(unfilteredTweets.stream()
                 .sorted(Comparator.comparing(Status::getId))
                 .limit(1)
@@ -206,36 +216,33 @@ public class TwitterService {
                 newTweets.size()));
         user.setLastActivityScan(new Date().getTime());
         user = userRepository.save(user);
-
         return user;
     }
 
+    /**
+     * 
+     * @param user
+     * @return 
+     */
     private User getUser(User user) {
         Long userId = userRepository.getUserIdByProfileId(user.getProfileId());
-
         if (userId != null) {
             user.setId(userId);
         }
-
         user = userRepository.save(user, 0);
-
         try {
             // Only crawl users that have manageable follows/follower counts
             if (user.getFollowerCount() < MAX_FOLLOWERS && user.getFollowsCount() < MAX_FOLLOWS) {
                 log.info("Discover user scheduled on follows graph " + dateFormat.format(new Date()));
                 user.setDiscoveredTime(new Date().getTime());
-
                 // Update discovery time
                 userRepository.save(user, 0);
-
                 // Update the discovery chain
                 userRepository.updateDiscoveryChain();
-
                 rabbitTemplate.convertAndSend(QUEUE_NAME, objectMapper.writeValueAsString(user));
             } else {
                 // Retry
                 User nextUserToCrawl = userRepository.findNextUserToCrawl();
-
                 if (nextUserToCrawl != null) {
                     this.discoverUserByProfileId(nextUserToCrawl.getProfileId());
                 }
@@ -246,35 +253,31 @@ public class TwitterService {
         return user;
     }
 
+    /**
+     * 
+     * @param sentimentResults 
+     */
     public void updateUserSentimentStatistics(Set<SentimentResult> sentimentResults) {
-
         Set<User> users = sentimentResults.stream().map(result -> {
             User user = new User();
             user.setProfileId(result.getUserProfileId());
             List<Double> sentiment = result.getSentiment();
-
             // Update statistics
             DoubleSummaryStatistics stats = DoubleStream.of(sentiment.stream()
                     .mapToDouble(Double::doubleValue).toArray())
                     .summaryStatistics();
-
             // Calculate cumulative sentiment
             user.setCumulativeSentiment(stats.getSum());
-
             // Calculate average sentiment
             user.setAverageSentiment(stats.getAverage());
-
             // Calculate standard deviation sentiment
             double stdDev = Statistics.standardDeviation(sentiment.stream()
                     .mapToDouble(d -> d).toArray());
             stdDev = Double.isNaN(stdDev) ? 0.0 : stdDev;
             user.setStdSentiment(stdDev);
-
             return user;
         }).collect(Collectors.toSet());
-
         log.info("Saving user sentiment statistics...");
-
         // Save updates for all users
         userRepository.updateUserStatistics(users);
     }

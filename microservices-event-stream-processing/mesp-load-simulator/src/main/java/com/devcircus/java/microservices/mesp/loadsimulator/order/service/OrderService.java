@@ -1,4 +1,4 @@
-package demo.order.service;
+package com.devcircus.java.microservices.mesp.loadsimulator.order.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.order.domain.Order;

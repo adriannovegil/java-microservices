@@ -17,17 +17,19 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mes-config-service</module>
         <module>mes-discovery-service</module>
         <module>mes-admin-service</module>
-        <!--        <module>mes-account-service</module>
+        <!-- Services -->
+<!--        <module>mes-account-service</module>
         <module>mes-catalog-service</module>                
         <module>mes-edge-service</module>
         <module>mes-inventory-service</module>
         <module>mes-online-store-web</module>
         <module>mes-order-service</module>
         <module>mes-payment-service</module>
-        <module>mes-shopping-cart-service</module>
+        <module>mes-cart-service</module>
         <module>mes-user-service</module>-->
     </modules>
 

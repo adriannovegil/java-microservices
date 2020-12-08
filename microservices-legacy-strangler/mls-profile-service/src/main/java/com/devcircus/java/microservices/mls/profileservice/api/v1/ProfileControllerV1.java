@@ -1,4 +1,4 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mls.profileservice.api.v1;
 
 import demo.profile.Profile;
 import org.springframework.beans.factory.annotation.Autowired;

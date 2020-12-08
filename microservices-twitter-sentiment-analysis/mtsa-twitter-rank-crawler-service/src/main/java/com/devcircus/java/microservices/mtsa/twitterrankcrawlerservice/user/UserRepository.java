@@ -13,9 +13,20 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
 
     User findUserByProfileId(Long profileId);
 
+    /**
+     * 
+     * @param profileId
+     * @return 
+     */
     @Query("MATCH (user:User { profileId: {profileId} }) RETURN id(user) as id")
     Long getUserIdByProfileId(@Param("profileId") Long profileId);
 
+    /**
+     * 
+     * @param skip
+     * @param limit
+     * @return 
+     */
     @Query("MATCH (user:User) WHERE exists(user.pagerank) AND exists(user.screenName) AND coalesce(user.imported, false) = true\n"
             + "WITH user\n"
             + "ORDER BY user.pagerank DESC\n"
@@ -24,23 +35,40 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "RETURN user")
     Set<User> findRankedUsers(@Param("skip") Integer skip, @Param("limit") Integer limit);
 
+    /**
+     * 
+     * @return 
+     */
     @Query("MATCH (user:User)-[:TWEETED]->(tweet:Tweet),\n"
             + "\t(tweet)-[entity:HAS_ENTITY]->(:TextEntity)\n"
             + "WHERE (user)-[:NEXT]-()\n"
             + "RETURN user.profileId as userProfileId, COLLECT(TOFLOAT(entity.sentiment)) as sentiment")
     Set<SentimentResult> findUserSentimentResults();
 
+    /**
+     * 
+     * @param profileId
+     * @return 
+     */
     @Query("MATCH (user:User)-[:NEXT]-(), (user)-[:TWEETED]->()-[r:HAS_ENTITY]->(e:TextEntity)\n"
             + "WHERE user.profileId = {profileId}\n"
             + "RETURN user.profileId as userProfileId, COLLECT(r.sentiment) as sentiment")
     SentimentResult getUserSentiment(@Param("profileId") Long profileId);
 
+    /**
+     * 
+     * @param users 
+     */
     @Query("FOREACH(x in {users} | MERGE (user:User { profileId: x.profileId })\n"
             + "SET user.averageSentiment = x.averageSentiment\n"
             + "SET user.stdSentiment = x.stdSentiment\n"
             + "SET user.cumulativeSentiment = x.cumulativeSentiment)")
     void updateUserStatistics(@Param("users") Set<User> users);
 
+    /**
+     * 
+     * @return 
+     */
     @Query("MATCH (a:User)<-[r:FOLLOWS]-(b)\n"
             + "WHERE NOT exists(a.screenName)\n"
             + "WITH a, count(r) as weight\n"
@@ -52,6 +80,10 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "RETURN a")
     User findNextUserToCrawl();
 
+    /**
+     * 
+     * @return 
+     */
     @Query("MATCH (user:User) WHERE exists(user.pagerank) AND NOT exists(user.screenName)\n"
             + "WITH user\n"
             + "ORDER BY user.pagerank DESC\n"
@@ -59,6 +91,10 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "RETURN user")
     User findRankedUserToCrawl();
 
+    /**
+     * 
+     * @return 
+     */
     @Query("MATCH (user:User) WHERE exists(user.pagerank) AND exists(user.screenName) AND (user)-[:NEXT]-()\n"
             + "WITH user\n"
             + "ORDER BY coalesce(user.lastActivityScan, 0)\n"
@@ -66,12 +102,18 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "RETURN user")
     User findNextUserActivityScan();
 
+    /**
+     * 
+     */
     @Query("MATCH (user:User) WHERE exists(user.pagerank) AND exists(user.screenName) AND NOT exists(user.lastPageRank)\n"
             + "WITH collect(user) as users\n"
             + "FOREACH(x in users | \n"
             + "SET x.lastPageRank = toFloat(x.pagerank))")
     void setLastPageRank();
 
+    /**
+     * 
+     */
     @Query("MATCH (user:User) WHERE exists(user.pagerank) AND exists(user.screenName) AND exists(user.lastPageRank)\n"
             + "WITH user\n"
             + "ORDER BY user.pagerank DESC\n"
@@ -86,6 +128,9 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "\tSET x.user.lastPageRank = x.user.pagerank)")
     void updateUserCurrentRank();
 
+    /**
+     * 
+     */
     @Transactional
     @Query("MATCH (user:User) WHERE exists(user.discoveredTime)\n"
             + "WITH user ORDER BY user.discoveredTime\n"
@@ -97,6 +142,9 @@ public interface UserRepository extends Neo4jRepository<User, Long> {
             + "SET s2.discoveredRank = n1 + 2")
     void updateDiscoveryChain();
 
+    /**
+     * 
+     */
     @Query("MATCH (u:User)\n"
             + "WITH collect(u) as nodes\n"
             + "CALL apoc.algo.pageRankWithConfig(nodes,{iterations:10,types:\"FOLLOWS\"}) YIELD node, score\n"

@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.orderweb.domain;
 
 import demo.event.Event;
 import org.springframework.data.annotation.CreatedDate;

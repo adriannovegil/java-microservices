@@ -1,4 +1,4 @@
-package demo.product;
+package com.devcircus.java.microservices.mes.inventoryservice.product;
 
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;

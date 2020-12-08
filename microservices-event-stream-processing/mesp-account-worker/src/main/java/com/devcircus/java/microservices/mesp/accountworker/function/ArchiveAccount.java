@@ -1,4 +1,4 @@
-package demo.function;
+package com.devcircus.java.microservices.mesp.accountworker.function;
 
 import demo.account.Account;
 import demo.account.AccountStatus;

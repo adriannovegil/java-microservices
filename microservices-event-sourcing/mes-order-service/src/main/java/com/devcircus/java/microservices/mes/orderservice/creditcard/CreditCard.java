@@ -1,7 +1,6 @@
-package demo.creditcard;
+package com.devcircus.java.microservices.mes.orderservice.creditcard;
 
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import java.io.Serializable;
 
 public class CreditCard extends BaseEntity implements Serializable {

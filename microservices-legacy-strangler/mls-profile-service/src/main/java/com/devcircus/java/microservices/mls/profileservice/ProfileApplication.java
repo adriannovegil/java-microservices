@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mls.profileservice;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.boot.SpringApplication;

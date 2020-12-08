@@ -1,11 +1,11 @@
-package demo;
+package com.devcircus.java.microservices.mes.inventoryservice;
 
-import demo.address.AddressRepository;
-import demo.catalog.CatalogRepository;
-import demo.inventory.InventoryRepository;
-import demo.product.ProductRepository;
-import demo.shipment.ShipmentRepository;
-import demo.warehouse.WarehouseRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.address.AddressRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.catalog.CatalogRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.inventory.InventoryRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.product.ProductRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.shipment.ShipmentRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.warehouse.WarehouseRepository;
 import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

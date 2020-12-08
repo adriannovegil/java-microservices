@@ -1,9 +1,8 @@
-package demo.inventory.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.event;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.controller.InventoryController;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.event.Event;
-import demo.inventory.controller.InventoryController;
-import demo.inventory.domain.Inventory;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

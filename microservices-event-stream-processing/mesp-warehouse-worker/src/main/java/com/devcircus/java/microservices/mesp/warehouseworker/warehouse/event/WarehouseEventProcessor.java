@@ -1,7 +1,6 @@
-package demo.warehouse.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event;
 
-import demo.warehouse.WarehouseStateFactory;
-import demo.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.WarehouseStateFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -20,6 +19,6 @@ public class WarehouseEventProcessor {
 
     @StreamListener(WarehouseEventSink.INPUT)
     public void streamListener(WarehouseEvent warehouseEvent) {
-        stateFactory.apply(warehouseEvent);
+        stateFactory.apply(WarehouseEvent);
     }
 }

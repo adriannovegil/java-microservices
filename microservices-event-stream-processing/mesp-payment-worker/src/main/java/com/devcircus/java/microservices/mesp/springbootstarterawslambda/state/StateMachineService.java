@@ -1,7 +1,7 @@
-package demo.state;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.state;
 
-import demo.payment.PaymentStatus;
-import demo.event.PaymentEventType;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.event.PaymentEventType;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.payment.PaymentStatus;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.stereotype.Service;

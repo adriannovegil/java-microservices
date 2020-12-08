@@ -1,4 +1,4 @@
-package io.example;
+package com.devcircus.java.microservices.mfres.edgeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

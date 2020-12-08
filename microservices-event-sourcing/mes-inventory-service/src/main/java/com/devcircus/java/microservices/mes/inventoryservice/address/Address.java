@@ -1,4 +1,4 @@
-package demo.address;
+package com.devcircus.java.microservices.mes.inventoryservice.address;
 
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;

@@ -1,7 +1,4 @@
-package demo.payment.event;
-
-import demo.payment.domain.Payment;
-import demo.payment.domain.PaymentStatus;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.event;
 
 public enum PaymentEventType {
     PAYMENT_CREATED,

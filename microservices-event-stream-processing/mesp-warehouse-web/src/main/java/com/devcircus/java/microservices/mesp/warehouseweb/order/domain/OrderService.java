@@ -1,7 +1,6 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.order.domain;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import demo.domain.Service;
 import org.apache.log4j.Logger;
 import org.springframework.hateoas.TemplateVariable;
 import org.springframework.hateoas.UriTemplate;

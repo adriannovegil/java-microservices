@@ -1,4 +1,4 @@
-package demo.inventory.controller;
+package com.devcircus.java.microservices.mesp.warehouseworker.inventory.controller;
 
 import demo.inventory.InventoryStateFactory;
 import demo.inventory.event.InventoryEvent;

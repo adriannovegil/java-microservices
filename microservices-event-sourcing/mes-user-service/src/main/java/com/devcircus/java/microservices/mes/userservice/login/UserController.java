@@ -1,4 +1,4 @@
-package demo.login;
+package com.devcircus.java.microservices.mes.userservice.login;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

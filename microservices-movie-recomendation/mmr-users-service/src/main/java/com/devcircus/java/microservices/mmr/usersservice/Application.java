@@ -1,6 +1,6 @@
-package data;
+package com.devcircus.java.microservices.mmr.usersservice;
 
-import data.domain.nodes.User;
+import com.devcircus.java.microservices.mmr.usersservice.domain.nodes.User;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.springframework.boot.SpringApplication;

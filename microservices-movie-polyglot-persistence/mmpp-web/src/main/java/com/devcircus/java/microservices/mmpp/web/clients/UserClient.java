@@ -1,6 +1,6 @@
-package service.clients;
+package com.devcircus.java.microservices.mmpp.web.clients;
 
-import service.models.User;
+import com.devcircus.java.microservices.mmpp.web.models.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.hateoas.PagedResources;
 import org.springframework.http.MediaType;

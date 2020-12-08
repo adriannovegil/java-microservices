@@ -1,4 +1,4 @@
-package demo.inventory.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.inventory.event;
 
 import demo.domain.AbstractEntity;
 

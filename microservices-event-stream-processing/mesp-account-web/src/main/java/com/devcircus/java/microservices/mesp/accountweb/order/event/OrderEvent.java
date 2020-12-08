@@ -1,4 +1,4 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.accountweb.order.event;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import demo.event.Event;

@@ -1,4 +1,4 @@
-package demo.warehouse.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.config;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Configuration;

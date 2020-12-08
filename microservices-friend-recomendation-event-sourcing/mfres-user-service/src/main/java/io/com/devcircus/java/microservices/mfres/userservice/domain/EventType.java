@@ -1,4 +1,4 @@
-package io.example.domain;
+package io.com.devcircus.java.microservices.mfres.userservice.domain;
 
 public enum EventType {
     USER_CREATED,

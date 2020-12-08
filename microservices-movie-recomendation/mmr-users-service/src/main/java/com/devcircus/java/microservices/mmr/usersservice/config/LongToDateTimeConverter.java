@@ -1,4 +1,4 @@
-package data.config;
+package com.devcircus.java.microservices.mmr.usersservice.config;
 
 import org.joda.time.DateTime;
 import org.springframework.core.convert.converter.Converter;

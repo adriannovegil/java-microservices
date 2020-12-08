@@ -8,6 +8,10 @@ import java.util.Set;
 
 public interface TweetedRepository extends Neo4jRepository<Tweeted, Long> {
 
+    /**
+     * 
+     * @param tweeted 
+     */
     @Query("FOREACH(x in {tweeted} | MERGE (a:User { profileId: x.user.profileId })\n"
             + "MERGE (b:Tweet { profileId: x.tweet.profileId, tweetId: x.tweet.tweetId })\n"
             + "MERGE (a)-[:TWEETED]->(b))")

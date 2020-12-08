@@ -1,4 +1,4 @@
-package demo.account.event;
+package com.devcircus.java.microservices.mesp.accountweb.account.event;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import demo.account.controller.AccountController;

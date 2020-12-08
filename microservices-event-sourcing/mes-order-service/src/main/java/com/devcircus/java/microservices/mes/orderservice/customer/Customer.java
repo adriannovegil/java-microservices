@@ -1,8 +1,7 @@
-package demo.customer;
+package com.devcircus.java.microservices.mes.orderservice.customer;
 
-import demo.account.Account;
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mes.orderservice.account.Account;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import java.io.Serializable;
 
 public class Customer extends BaseEntity implements Serializable {

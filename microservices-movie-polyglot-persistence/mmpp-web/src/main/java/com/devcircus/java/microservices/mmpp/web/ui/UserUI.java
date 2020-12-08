@@ -1,5 +1,12 @@
-package service.ui;
+package com.devcircus.java.microservices.mmpp.web.ui;
 
+import com.devcircus.java.microservices.mmpp.web.clients.MovieClient;
+import com.devcircus.java.microservices.mmpp.web.clients.RatingClient;
+import com.devcircus.java.microservices.mmpp.web.clients.UserClient;
+import com.devcircus.java.microservices.mmpp.web.models.Genre;
+import com.devcircus.java.microservices.mmpp.web.models.Movie;
+import com.devcircus.java.microservices.mmpp.web.models.Product;
+import com.devcircus.java.microservices.mmpp.web.models.User;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
@@ -14,13 +21,6 @@ import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.*;
 import com.vaadin.ui.renderers.HtmlRenderer;
 import org.springframework.beans.factory.annotation.Autowired;
-import service.clients.MovieClient;
-import service.clients.RatingClient;
-import service.clients.UserClient;
-import service.models.Genre;
-import service.models.Movie;
-import service.models.Product;
-import service.models.User;
 
 import javax.servlet.annotation.WebServlet;
 import java.util.Arrays;

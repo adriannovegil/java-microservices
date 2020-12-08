@@ -1,8 +1,7 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.order.event;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.order.domain.Order;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.event.Event;
-import demo.order.domain.Order;
 
 public class OrderEvent extends Event<Order, OrderEventType, Long> {
 

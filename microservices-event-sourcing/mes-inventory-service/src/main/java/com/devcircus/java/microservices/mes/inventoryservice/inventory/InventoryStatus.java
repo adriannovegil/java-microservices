@@ -1,4 +1,4 @@
-package demo.inventory;
+package com.devcircus.java.microservices.mes.inventoryservice.inventory;
 
 public enum InventoryStatus {
     IN_STOCK,

@@ -1,6 +1,6 @@
-package demo.listeners;
+package com.devcircus.java.microservices.mes.orderservice.listeners;
 
-import demo.domain.BaseEntity;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventListener;
 import org.springframework.data.mongodb.core.mapping.event.BeforeSaveEvent;
 import org.springframework.stereotype.Component;

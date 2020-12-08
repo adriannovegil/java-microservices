@@ -1,4 +1,4 @@
-package service.data.config;
+package com.devcircus.java.microservices.mmpp.userservice.data.config;
 
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;

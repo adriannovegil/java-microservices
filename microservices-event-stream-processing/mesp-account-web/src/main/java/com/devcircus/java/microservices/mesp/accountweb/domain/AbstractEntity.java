@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.accountweb.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import demo.event.Event;

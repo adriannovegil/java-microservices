@@ -1,6 +1,6 @@
-package service.data.repositories;
+package com.devcircus.java.microservices.mmpp.ratingservice.data.repositories;
 
-import service.data.domain.rels.Rating;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.rels.Rating;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.neo4j.annotation.Query;

@@ -1,6 +1,6 @@
-package demo.reservation.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.event;
 
-import demo.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.warehouseworker.domain.AbstractEntity;
 
 public class ReservationEvent extends AbstractEntity {
 

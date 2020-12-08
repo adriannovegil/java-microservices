@@ -1,9 +1,7 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain;
 
-import demo.domain.Module;
-import demo.event.EventService;
-import demo.reservation.event.ReservationEvent;
-import demo.reservation.event.ReservationEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventService;
 
 @org.springframework.stereotype.Service
 public class ReservationModule extends Module<Reservation> {

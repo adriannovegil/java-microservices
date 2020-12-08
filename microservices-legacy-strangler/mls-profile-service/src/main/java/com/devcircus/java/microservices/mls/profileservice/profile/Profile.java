@@ -1,7 +1,6 @@
-package demo.profile;
+package com.devcircus.java.microservices.mls.profileservice.profile;
 
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mls.profileservice.data.BaseEntity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

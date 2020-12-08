@@ -1,9 +1,9 @@
-package demo.v1;
+package com.devcircus.java.microservices.mes.inventoryservice.v1;
 
-import demo.inventory.Inventory;
-import demo.inventory.InventoryRepository;
-import demo.product.Product;
-import demo.product.ProductRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.inventory.Inventory;
+import com.devcircus.java.microservices.mes.inventoryservice.inventory.InventoryRepository;
+import com.devcircus.java.microservices.mes.inventoryservice.product.Product;
+import com.devcircus.java.microservices.mes.inventoryservice.product.ProductRepository;
 import org.neo4j.ogm.session.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mes.paymentservice;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

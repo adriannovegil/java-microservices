@@ -1,4 +1,4 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.orderworker.order.event;
 
 import org.springframework.hateoas.Resources;
 

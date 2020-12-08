@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.accountweb.order.domain;
 
 import java.io.Serializable;
 

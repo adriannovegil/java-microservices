@@ -1,4 +1,4 @@
-package demo.util;
+package com.devcircus.java.microservices.mesp.orderworker.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.example;
+package com.devcircus.java.microservices.mls.mlscustomerlegacyservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

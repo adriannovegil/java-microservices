@@ -1,7 +1,7 @@
-package demo.inventory.repository;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.repository;
 
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

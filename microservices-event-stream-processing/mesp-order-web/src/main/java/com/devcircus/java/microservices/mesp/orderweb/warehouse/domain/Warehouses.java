@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.orderweb.warehouse.domain;
 
 import demo.order.domain.Order;
 import org.springframework.hateoas.Link;

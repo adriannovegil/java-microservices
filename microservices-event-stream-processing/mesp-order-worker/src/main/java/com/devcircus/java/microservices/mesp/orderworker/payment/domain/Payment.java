@@ -1,6 +1,6 @@
-package demo.payment.domain;
+package com.devcircus.java.microservices.mesp.orderworker.payment.domain;
 
-import demo.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.orderworker.domain.AbstractEntity;
 
 public class Payment extends AbstractEntity {
 

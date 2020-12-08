@@ -1,8 +1,8 @@
-package demo.order;
+package com.devcircus.java.microservices.mes.orderservice.order;
 
-import demo.address.Address;
-import demo.address.AddressType;
-import demo.domain.BaseEntity;
+import com.devcircus.java.microservices.mes.orderservice.address.Address;
+import com.devcircus.java.microservices.mes.orderservice.address.AddressType;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;

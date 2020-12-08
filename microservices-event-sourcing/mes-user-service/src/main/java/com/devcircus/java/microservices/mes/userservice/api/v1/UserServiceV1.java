@@ -1,7 +1,7 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mes.userservice.api.v1;
 
-import demo.user.User;
-import demo.user.UserRepository;
+import com.devcircus.java.microservices.mes.userservice.user.User;
+import com.devcircus.java.microservices.mes.userservice.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

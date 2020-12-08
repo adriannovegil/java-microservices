@@ -1,4 +1,4 @@
-package demo.account.event;
+package com.devcircus.java.microservices.mesp.accountweb.account.event;
 
 public enum AccountEventType {
     ACCOUNT_CREATED,

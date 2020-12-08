@@ -18,11 +18,20 @@ public class ApiController {
 
     private final TwitterService twitterService;
 
+    /**
+     * 
+     * @param twitterService 
+     */
     @Autowired
     public ApiController(TwitterService twitterService) {
         this.twitterService = twitterService;
     }
 
+    /**
+     * 
+     * @param screenName
+     * @return 
+     */
     @RequestMapping(path = "user/{screenName}", method = RequestMethod.GET)
     public ResponseEntity<User> discoverProfileByScreenName(@PathVariable("screenName") String screenName) {
         return Optional.of(ResponseEntity.ok(twitterService.discoverUserByScreenName(screenName)))

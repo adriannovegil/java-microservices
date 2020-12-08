@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain;
 
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;

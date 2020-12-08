@@ -1,4 +1,4 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.accountworker.event;
 
 import org.springframework.hateoas.Resources;
 

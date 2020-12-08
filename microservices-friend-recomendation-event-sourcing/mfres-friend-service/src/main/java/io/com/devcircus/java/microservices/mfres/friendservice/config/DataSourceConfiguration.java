@@ -1,4 +1,4 @@
-package io.example.config;
+package io.com.devcircus.java.microservices.mfres.friendservice.config;
 
 import io.r2dbc.postgresql.PostgresqlConnectionConfiguration;
 import io.r2dbc.postgresql.PostgresqlConnectionFactory;

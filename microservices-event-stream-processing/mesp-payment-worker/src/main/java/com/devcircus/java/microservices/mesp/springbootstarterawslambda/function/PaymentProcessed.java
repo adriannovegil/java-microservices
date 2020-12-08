@@ -1,9 +1,9 @@
-package demo.function;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.function;
 
-import demo.event.PaymentEvent;
-import demo.event.PaymentEventType;
-import demo.payment.Payment;
-import demo.payment.PaymentStatus;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.event.PaymentEvent;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.event.PaymentEventType;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.payment.Payment;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.payment.PaymentStatus;
 import org.apache.log4j.Logger;
 import org.springframework.statemachine.StateContext;
 

@@ -1,8 +1,8 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain;
 
+import com.devcircus.java.microservices.mesp.warehouseworker.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEvent;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.reservation.event.ReservationEvent;
 import org.springframework.hateoas.Link;
 
 import java.util.ArrayList;

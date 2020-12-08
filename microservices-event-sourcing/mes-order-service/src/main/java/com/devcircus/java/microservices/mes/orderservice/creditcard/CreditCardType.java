@@ -1,4 +1,4 @@
-package demo.creditcard;
+package com.devcircus.java.microservices.mes.orderservice.creditcard;
 
 public enum CreditCardType {
     VISA,

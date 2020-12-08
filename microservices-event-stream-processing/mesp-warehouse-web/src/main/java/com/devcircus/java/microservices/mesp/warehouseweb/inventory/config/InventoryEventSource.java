@@ -1,4 +1,4 @@
-package demo.inventory.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.config;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;

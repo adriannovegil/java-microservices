@@ -1,4 +1,4 @@
-package demo.payment.domain;
+package com.devcircus.java.microservices.mesp.orderworker.payment.domain;
 
 public enum PaymentStatus {
     PAYMENT_CREATED,

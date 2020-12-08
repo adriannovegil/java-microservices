@@ -1,7 +1,7 @@
-package demo.inventory;
+package com.devcircus.java.microservices.mes.inventoryservice.inventory;
 
-import demo.product.Product;
-import demo.warehouse.Warehouse;
+import com.devcircus.java.microservices.mes.inventoryservice.product.Product;
+import com.devcircus.java.microservices.mes.inventoryservice.warehouse.Warehouse;
 import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Relationship;

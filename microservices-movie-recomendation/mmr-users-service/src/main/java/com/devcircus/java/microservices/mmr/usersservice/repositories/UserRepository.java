@@ -1,6 +1,6 @@
-package data.repositories;
+package com.devcircus.java.microservices.mmr.usersservice.repositories;
 
-import data.domain.nodes.User;
+import com.devcircus.java.microservices.mmr.usersservice.domain.nodes.User;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

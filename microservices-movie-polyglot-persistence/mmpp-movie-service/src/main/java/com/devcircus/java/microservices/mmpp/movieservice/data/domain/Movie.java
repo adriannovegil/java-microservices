@@ -1,4 +1,4 @@
-package service.data.domain;
+package com.devcircus.java.microservices.mmpp.movieservice.data.domain;
 
 import org.springframework.data.rest.core.annotation.RestResource;
 

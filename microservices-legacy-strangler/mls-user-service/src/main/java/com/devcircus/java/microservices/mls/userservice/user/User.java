@@ -1,7 +1,6 @@
 package com.devcircus.java.microservices.mls.userservice.user;
 
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mls.userservice.data.BaseEntity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

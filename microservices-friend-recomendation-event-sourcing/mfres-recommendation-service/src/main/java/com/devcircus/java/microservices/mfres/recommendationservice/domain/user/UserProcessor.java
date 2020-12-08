@@ -1,6 +1,6 @@
-package io.example.domain.user;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.user;
 
-import io.example.domain.user.entity.User;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.user.entity.User;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.context.annotation.Configuration;

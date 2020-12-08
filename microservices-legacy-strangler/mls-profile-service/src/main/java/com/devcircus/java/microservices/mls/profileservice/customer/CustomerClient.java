@@ -1,4 +1,4 @@
-package demo.customer;
+package com.devcircus.java.microservices.mls.profileservice.customer;
 
 import com.kennybastani.guides.customer_service.*;
 import demo.profile.Profile;

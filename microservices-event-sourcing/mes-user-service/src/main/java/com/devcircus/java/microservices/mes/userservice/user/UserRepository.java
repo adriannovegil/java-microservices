@@ -1,4 +1,4 @@
-package demo.user;
+package com.devcircus.java.microservices.mes.userservice.user;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

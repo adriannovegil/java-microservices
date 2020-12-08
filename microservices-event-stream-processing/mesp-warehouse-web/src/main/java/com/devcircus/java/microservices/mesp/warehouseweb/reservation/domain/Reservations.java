@@ -1,4 +1,4 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain;
 
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;

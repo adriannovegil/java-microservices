@@ -1,4 +1,4 @@
-package io.example.domain.user.entity;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.user.entity;
 
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;

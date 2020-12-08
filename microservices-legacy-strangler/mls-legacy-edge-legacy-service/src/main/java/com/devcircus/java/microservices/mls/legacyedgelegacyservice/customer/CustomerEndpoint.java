@@ -1,4 +1,4 @@
-package com.example.customer;
+package com.devcircus.java.microservices.mls.legacyedgelegacyservice.customer;
 
 import com.kennybastani.guides.customer_service.*;
 import org.springframework.beans.factory.annotation.Autowired;

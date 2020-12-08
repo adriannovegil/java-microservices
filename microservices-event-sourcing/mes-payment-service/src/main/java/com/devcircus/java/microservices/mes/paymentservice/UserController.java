@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mes.paymentservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,9 +1,9 @@
-package demo.message;
+package com.devcircus.java.microservices.mls.profileservice.message;
 
+import com.devcircus.java.microservices.mls.profileservice.customer.CustomerClient;
+import com.devcircus.java.microservices.mls.profileservice.profile.Profile;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kennybastani.guides.customer_service.UpdateCustomerResponse;
-import demo.customer.CustomerClient;
-import demo.profile.Profile;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.amqp.AmqpIllegalStateException;

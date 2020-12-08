@@ -1,13 +1,12 @@
-package demo.inventory.action;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.action;
 
-import demo.domain.Action;
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryService;
-import demo.inventory.domain.InventoryStatus;
-import demo.inventory.event.InventoryEvent;
-import demo.inventory.event.InventoryEventType;
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEventType;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.ReservationService;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;

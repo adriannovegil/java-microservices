@@ -1,6 +1,5 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.domain;
 
-import demo.event.Event;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

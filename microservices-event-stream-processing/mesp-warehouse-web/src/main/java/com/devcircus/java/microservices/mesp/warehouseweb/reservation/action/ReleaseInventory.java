@@ -1,22 +1,20 @@
-package demo.reservation.action;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.action;
 
-import demo.domain.Action;
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryService;
-import demo.inventory.domain.InventoryStatus;
-import demo.inventory.event.InventoryEvent;
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationModule;
-import demo.reservation.domain.ReservationService;
-import demo.reservation.domain.ReservationStatus;
-import demo.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.ReservationModule;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.ReservationStatus;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import static demo.inventory.event.InventoryEventType.INVENTORY_RELEASED;
-import static demo.reservation.event.ReservationEventType.RESERVATION_FAILED;
+import static com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEventType.INVENTORY_RELEASED;
+import static com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventType.RESERVATION_FAILED;
 
 @Service
 @Transactional

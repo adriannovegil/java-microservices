@@ -1,9 +1,9 @@
-package demo.reservation.function;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.function;
 
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationStatus;
-import demo.reservation.event.ReservationEvent;
-import demo.reservation.event.ReservationEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain.ReservationStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEventType;
 import org.apache.log4j.Logger;
 import org.springframework.statemachine.StateContext;
 

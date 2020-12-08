@@ -1,8 +1,6 @@
-package demo.account.domain;
+package com.devcircus.java.microservices.mesp.accountweb.account.domain;
 
-import demo.domain.Module;
-import demo.account.event.AccountEvent;
-import demo.event.EventService;
+import com.devcircus.java.microservices.mesp.accountweb.account.event.AccountEvent;
 
 @org.springframework.stereotype.Service
 public class AccountModule extends Module<Account> {

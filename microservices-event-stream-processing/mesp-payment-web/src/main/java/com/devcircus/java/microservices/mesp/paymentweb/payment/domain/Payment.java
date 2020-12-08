@@ -1,12 +1,9 @@
-package demo.payment.domain;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.domain;
 
+import com.devcircus.java.microservices.mesp.paymentweb.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.paymentweb.payment.action.ConnectOrder;
+import com.devcircus.java.microservices.mesp.paymentweb.payment.controller.PaymentController;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.AbstractEntity;
-import demo.domain.Command;
-import demo.payment.action.ConnectOrder;
-import demo.payment.action.ProcessPayment;
-import demo.payment.controller.PaymentController;
-import demo.payment.event.PaymentEvent;
 import org.springframework.hateoas.Link;
 
 import javax.persistence.*;

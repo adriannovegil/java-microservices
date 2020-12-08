@@ -17,9 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mmr-config-service</module>        
         <module>mmr-discovery-service</module>
         <module>mmr-admin-service</module>
+        <!-- Services -->
         <!--<module>mmr-consul-service</module>-->
         <!--        <module>mmr-api-gateway-service</module>                        
         <module>mmr-movie-service</module>

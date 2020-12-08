@@ -1,7 +1,5 @@
-package demo.warehouse.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event;
 
-import demo.event.BasicEventService;
-import demo.event.EventSource;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.hateoas.Link;
 import org.springframework.http.MediaType;

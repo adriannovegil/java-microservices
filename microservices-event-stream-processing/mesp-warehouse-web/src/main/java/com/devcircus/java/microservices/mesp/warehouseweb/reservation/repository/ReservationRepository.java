@@ -1,4 +1,4 @@
-package demo.reservation.repository;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.repository;
 
 import demo.reservation.domain.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;

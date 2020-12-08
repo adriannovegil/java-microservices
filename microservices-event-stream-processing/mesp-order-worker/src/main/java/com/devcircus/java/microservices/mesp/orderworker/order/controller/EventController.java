@@ -1,4 +1,4 @@
-package demo.order.controller;
+package com.devcircus.java.microservices.mesp.orderworker.order.controller;
 
 import demo.order.StateFactory;
 import demo.order.event.OrderEvent;

@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.warehouse.domain;
 
 public class WarehouseEvent {
 

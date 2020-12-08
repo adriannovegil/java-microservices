@@ -1,8 +1,7 @@
-package io.example.domain.friend;
+package io.com.devcircus.java.microservices.mfres.friendservice.domain.friend;
 
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;

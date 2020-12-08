@@ -10,6 +10,10 @@ import java.util.Set;
 @RepositoryRestResource(collectionResourceRel = "following", itemResourceRel = "following", path = "following")
 public interface FollowsRepository extends Neo4jRepository<Follows, Long> {
 
+    /**
+     * 
+     * @param follows 
+     */
     @Query("FOREACH(x in {follows} | MERGE (a:User { profileId: x.userA.profileId })\n"
             + "MERGE (b:User { profileId: x.userB.profileId })\n"
             + "MERGE (a)-[:FOLLOWS]->(b))")

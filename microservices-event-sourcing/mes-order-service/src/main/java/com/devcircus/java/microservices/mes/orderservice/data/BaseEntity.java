@@ -1,4 +1,4 @@
-package demo.data;
+package com.devcircus.java.microservices.mes.orderservice.data;
 
 import java.io.Serializable;
 

@@ -1,7 +1,7 @@
-package demo.order;
+package com.devcircus.java.microservices.mesp.orderworker.order;
 
-import demo.order.domain.OrderStatus;
-import demo.order.event.OrderEventType;
+import com.devcircus.java.microservices.mesp.orderworker.order.domain.OrderStatus;
+import com.devcircus.java.microservices.mesp.orderworker.order.event.OrderEventType;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.stereotype.Service;

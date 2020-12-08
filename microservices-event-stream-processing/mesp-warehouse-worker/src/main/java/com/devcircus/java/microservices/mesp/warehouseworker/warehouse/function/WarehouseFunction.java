@@ -1,9 +1,9 @@
-package demo.warehouse.function;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.function;
 
-import demo.warehouse.domain.Warehouse;
-import demo.warehouse.domain.WarehouseStatus;
-import demo.warehouse.event.WarehouseEvent;
-import demo.warehouse.event.WarehouseEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.WarehouseStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEventType;
 import org.apache.log4j.Logger;
 import org.springframework.statemachine.StateContext;
 

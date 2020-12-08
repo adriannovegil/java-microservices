@@ -1,4 +1,4 @@
-package demo.account.controller;
+package com.devcircus.java.microservices.mesp.accountweb.account.controller;
 
 import demo.account.domain.Account;
 import demo.account.domain.AccountService;

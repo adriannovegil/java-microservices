@@ -17,9 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mesp-config-service</module>
         <module>mesp-discovery-service</module>        
-        <module>mesp-admin-service</module>        
+        <module>mesp-admin-service</module>  
+        <!-- Services -->      
         <!--        <module>mesp-account-web</module>
         <module>mesp-account-worker</module>
         <module>mesp-dashboard-web</module>

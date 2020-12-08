@@ -1,4 +1,4 @@
-package demo.reservation.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.config;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.context.annotation.Configuration;

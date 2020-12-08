@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.accountweb.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

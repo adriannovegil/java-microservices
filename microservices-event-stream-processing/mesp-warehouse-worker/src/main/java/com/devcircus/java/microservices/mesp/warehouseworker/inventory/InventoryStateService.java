@@ -1,9 +1,7 @@
-package demo.inventory;
+package com.devcircus.java.microservices.mesp.warehouseworker.inventory;
 
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryStatus;
-import demo.inventory.event.InventoryEvent;
-import demo.inventory.event.InventoryEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.event.InventoryEventType;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.stereotype.Service;

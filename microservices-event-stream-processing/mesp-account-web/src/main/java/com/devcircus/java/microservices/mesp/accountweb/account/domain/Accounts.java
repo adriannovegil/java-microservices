@@ -1,4 +1,4 @@
-package demo.account.domain;
+package com.devcircus.java.microservices.mesp.accountweb.account.domain;
 
 import org.springframework.data.domain.Page;
 import org.springframework.hateoas.Link;

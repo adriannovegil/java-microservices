@@ -1,7 +1,7 @@
-package service.data.domain.rels;
+package com.devcircus.java.microservices.mmpp.ratingservice.data.domain.rels;
 
-import service.data.domain.entity.User;
-import service.data.domain.entity.Product;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.entity.Product;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.entity.User;
 import org.springframework.data.neo4j.annotation.*;
 
 @RelationshipEntity(type = "Rating")

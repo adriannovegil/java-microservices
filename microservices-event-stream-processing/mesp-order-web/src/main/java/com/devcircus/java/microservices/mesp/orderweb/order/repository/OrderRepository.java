@@ -1,4 +1,4 @@
-package demo.order.repository;
+package com.devcircus.java.microservices.mesp.orderweb.order.repository;
 
 import demo.order.domain.Order;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package service.data.domain.entity;
+package com.devcircus.java.microservices.mmpp.ratingservice.data.domain.entity;
 
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.Indexed;

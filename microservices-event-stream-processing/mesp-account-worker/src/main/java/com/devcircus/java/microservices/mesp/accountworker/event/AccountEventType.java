@@ -1,7 +1,4 @@
-package demo.event;
-
-import demo.account.Account;
-import demo.account.AccountStatus;
+package com.devcircus.java.microservices.mesp.accountworker.event;
 
 public enum AccountEventType {
     ACCOUNT_CREATED,

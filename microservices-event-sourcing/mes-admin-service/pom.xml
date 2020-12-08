@@ -36,7 +36,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
         <!-- Spring Boot Admin -->
         <dependency>
             <groupId>de.codecentric</groupId>
@@ -48,7 +47,6 @@
             <artifactId>spring-boot-admin-server-ui</artifactId>
             <version>${spring-boot-admin.version}</version>
         </dependency>
-
     </dependencies>
 
     <profiles>

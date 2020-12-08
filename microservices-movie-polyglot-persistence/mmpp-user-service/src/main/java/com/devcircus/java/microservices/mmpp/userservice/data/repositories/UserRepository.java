@@ -1,6 +1,6 @@
-package service.data.repositories;
+package com.devcircus.java.microservices.mmpp.userservice.data.repositories;
 
-import service.data.domain.entity.User;
+import com.devcircus.java.microservices.mmpp.userservice.data.domain.entity.User;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.neo4j.repository.GraphRepository;

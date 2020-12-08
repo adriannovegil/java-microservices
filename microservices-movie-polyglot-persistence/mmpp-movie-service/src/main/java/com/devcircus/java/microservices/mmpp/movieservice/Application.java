@@ -1,13 +1,12 @@
-package service;
+package com.devcircus.java.microservices.mmpp.movieservice;
 
+import com.devcircus.java.microservices.mmpp.movieservice.data.domain.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
-import service.data.domain.Movie;
-
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication

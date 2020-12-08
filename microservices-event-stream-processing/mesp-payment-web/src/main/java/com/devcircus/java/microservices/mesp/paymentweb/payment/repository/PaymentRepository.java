@@ -1,4 +1,4 @@
-package demo.payment.repository;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.repository;
 
 import demo.payment.domain.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;

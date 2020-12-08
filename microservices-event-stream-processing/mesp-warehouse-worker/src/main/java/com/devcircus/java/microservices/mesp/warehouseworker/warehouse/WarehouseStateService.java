@@ -1,7 +1,7 @@
-package demo.warehouse;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse;
 
-import demo.warehouse.domain.WarehouseStatus;
-import demo.warehouse.event.WarehouseEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.WarehouseStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEventType;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.config.StateMachineFactory;
 import org.springframework.stereotype.Service;

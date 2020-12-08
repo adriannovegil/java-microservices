@@ -1,20 +1,19 @@
 package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.processor;
 
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.nlp.TextAnalysis;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.TextEntity;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.text.TextEntityRepository;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet.Tweet;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet.TweetRepository;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.tweet.TwitterService;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.User;
+import com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.user.UserRepository;
 import com.google.cloud.language.v1.ClassificationCategory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.kbastani.nlp.TextAnalysis;
-import org.kbastani.text.TextEntity;
-import org.kbastani.text.TextEntityRepository;
-import org.kbastani.tweet.Tweet;
-import org.kbastani.tweet.TweetRepository;
-import org.kbastani.tweet.TwitterService;
-import org.kbastani.user.User;
-import org.kbastani.user.UserRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -40,6 +39,13 @@ public class RankProcessor {
     @Value("${neo4j.mazerunner.host:graphdb:7474}")
     private String mazerunnerHost;
 
+    /**
+     * 
+     * @param twitterService
+     * @param userRepository
+     * @param textEntityRepository
+     * @param tweetRepository 
+     */
     public RankProcessor(TwitterService twitterService, UserRepository userRepository,
             TextEntityRepository textEntityRepository, TweetRepository tweetRepository) {
         this.twitterService = twitterService;
@@ -48,18 +54,27 @@ public class RankProcessor {
         this.tweetRepository = tweetRepository;
     }
 
+    /**
+     * 
+     */
     @Scheduled(fixedRate = 100000, initialDelay = 20000)
     public void scheduleFollowerPageRank() {
         logger.info(String.format("FOLLOWS PageRank scheduled on user graph %s", dateFormat.format(new Date())));
         userRepository.updatePageRankForFollowGraph();
     }
 
+    /**
+     * 
+     */
     @Scheduled(fixedRate = 90000, initialDelay = 20000)
     public void scheduleEntityPageRank() {
         logger.info(String.format("HAS_ENTITY PageRank scheduled on semantic graph %s", dateFormat.format(new Date())));
         textEntityRepository.updatePageRankForEntityGraph();
     }
 
+    /**
+     * 
+     */
     @Scheduled(fixedRate = 60000)
     public void scheduleDiscoverUser() {
 
@@ -88,6 +103,9 @@ public class RankProcessor {
 
     }
 
+    /**
+     * 
+     */
     @Scheduled(fixedRate = 20000, initialDelay = 20000)
     public void scheduleUserActivityScan() {
         logger.info("Importing user activity for sentiment analysis...");
@@ -107,6 +125,9 @@ public class RankProcessor {
         }
     }
 
+    /**
+     * 
+     */
     @Scheduled(fixedRate = 5000)
     public void scheduleEntityClassification() {
         // The entity graph abstracts tweets by extracting salient parts of speech.
@@ -124,18 +145,17 @@ public class RankProcessor {
         executorService.execute(this::entityClassification);
     }
 
+    /**
+     * 
+     */
     private void entityClassification() {
         // Query the next top ranked semantic entity that has yet to be classified and submit all tweet text
         // to the classification API
         TextEntity entity = textEntityRepository.findUncategorizedTextEntity(new Date().getTime());
-
         if (entity != null) {
             logger.info(String.format("Classifying text entity with name: %s...", entity.getName()));
-
             List<Tweet> tweets = tweetRepository.findTweetsForTextEntity(entity.getName());
-
             List<ClassificationCategory> classificationCategories = new ArrayList<>();
-
             if (tweets.size() >= 3) {
                 try {
                     // Compose a single string of text from multiple tweets and send it to the NLP classifier
@@ -146,7 +166,6 @@ public class RankProcessor {
                     logger.info(String.format("Error classifying tweets: %s", ex.getMessage()));
                 }
             }
-
             // Create new Category labeled nodes and connect any retrieved topics from the NLP API
             // under the relationship: (:TextEntity)-[:HAS_CATEGORY]->(:Category)
             if (classificationCategories.size() > 0) {

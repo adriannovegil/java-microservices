@@ -1,19 +1,18 @@
-package demo.account.action;
+package com.devcircus.java.microservices.mesp.accountweb.account.action;
 
-import demo.account.domain.Account;
-import demo.account.domain.AccountModule;
-import demo.account.domain.AccountService;
-import demo.account.domain.AccountStatus;
-import demo.account.event.AccountEvent;
-import demo.account.event.AccountEventType;
-import demo.domain.Action;
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.Account;
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.AccountModule;
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.AccountService;
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.AccountStatus;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
-import static demo.account.domain.AccountStatus.ACCOUNT_ACTIVE;
-import static demo.account.domain.AccountStatus.ACCOUNT_SUSPENDED;
+import static com.devcircus.java.microservices.mesp.accountweb.account.domain.AccountStatus.ACCOUNT_ACTIVE;
+import static com.devcircus.java.microservices.mesp.accountweb.account.domain.AccountStatus.ACCOUNT_SUSPENDED;
+import com.devcircus.java.microservices.mesp.accountweb.account.event.AccountEvent;
+import com.devcircus.java.microservices.mesp.accountweb.account.event.AccountEventType;
 
 @Service
 @Transactional

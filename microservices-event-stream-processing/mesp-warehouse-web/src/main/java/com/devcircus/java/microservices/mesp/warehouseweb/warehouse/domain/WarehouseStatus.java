@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain;
 
 public enum WarehouseStatus {
     WAREHOUSE_CREATED

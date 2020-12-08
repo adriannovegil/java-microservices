@@ -1,7 +1,7 @@
 package com.devcircus.java.microservices.mesp.springbootstarterdataevents.event;
 
+import com.devcircus.java.microservices.mesp.springbootstarterdataevents.domain.Aggregate;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.domain.Aggregate;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resources;
 

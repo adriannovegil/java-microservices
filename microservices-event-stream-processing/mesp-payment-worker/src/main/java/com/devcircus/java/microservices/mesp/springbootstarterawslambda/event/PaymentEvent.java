@@ -1,4 +1,4 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.event;
 
 import demo.domain.BaseEntity;
 

@@ -17,9 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>mls-config-service</module>
         <module>mls-discovery-service</module>
         <module>mls-admin-service</module>
+        <!-- Services -->
         <!--        <module>mls-customer-legacy-service</module>        
         <module>mls-legacy-edge-legacy-service</module>
         <module>mls-mls-edge-service</module>

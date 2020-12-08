@@ -1,4 +1,4 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.orderweb.reservation.domain;
 
 import demo.domain.Module;
 import demo.event.EventService;

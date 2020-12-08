@@ -1,4 +1,4 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.order.event;
 
 public enum OrderEventType {
     ORDER_CREATED,

@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mesp.dataflowserver;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

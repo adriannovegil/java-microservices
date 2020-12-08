@@ -1,4 +1,4 @@
-package demo.order.controller;
+package com.devcircus.java.microservices.mesp.orderweb.order.controller;
 
 import demo.event.EventService;
 import demo.event.Events;

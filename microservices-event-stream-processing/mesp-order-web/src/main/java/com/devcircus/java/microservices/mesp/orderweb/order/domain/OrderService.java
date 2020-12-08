@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.orderweb.order.domain;
 
 import demo.domain.Service;
 import demo.order.event.OrderEvent;

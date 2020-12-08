@@ -1,10 +1,8 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.order.domain;
 
+import com.devcircus.java.microservices.mesp.warehouseweb.order.event.OrderEvent;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.domain.Aggregate;
-import demo.domain.Module;
-import demo.order.event.OrderEvent;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.TemplateVariable;
 import org.springframework.hateoas.UriTemplate;

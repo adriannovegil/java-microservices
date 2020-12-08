@@ -1,4 +1,4 @@
-package demo.reservation.event;
+package com.devcircus.java.microservices.mesp.orderworker.reservation.event;
 
 public enum ReservationEventType {
     RESERVATION_CREATED,

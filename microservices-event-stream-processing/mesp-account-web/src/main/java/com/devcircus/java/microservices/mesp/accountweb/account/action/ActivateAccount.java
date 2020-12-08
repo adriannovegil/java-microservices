@@ -1,4 +1,4 @@
-package demo.account.action;
+package com.devcircus.java.microservices.mesp.accountweb.account.action;
 
 import demo.account.domain.Account;
 import demo.account.domain.AccountModule;

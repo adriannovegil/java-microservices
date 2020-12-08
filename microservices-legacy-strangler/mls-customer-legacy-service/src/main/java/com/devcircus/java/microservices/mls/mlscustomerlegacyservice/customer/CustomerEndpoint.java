@@ -1,4 +1,4 @@
-package com.example.customer;
+package com.devcircus.java.microservices.mls.mlscustomerlegacyservice.customer;
 
 import com.kennybastani.guides.customer_service.GetCustomerRequest;
 import com.kennybastani.guides.customer_service.GetCustomerResponse;

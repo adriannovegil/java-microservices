@@ -1,8 +1,8 @@
-package demo.config;
+package com.devcircus.java.microservices.mes.orderservice.config;
 
-import demo.address.Address;
-import demo.invoice.Invoice;
-import demo.invoice.InvoiceRepository;
+import com.devcircus.java.microservices.mes.orderservice.address.Address;
+import com.devcircus.java.microservices.mes.orderservice.invoice.Invoice;
+import com.devcircus.java.microservices.mes.orderservice.invoice.InvoiceRepository;
 import demo.order.LineItem;
 import demo.order.Order;
 import demo.order.OrderRepository;

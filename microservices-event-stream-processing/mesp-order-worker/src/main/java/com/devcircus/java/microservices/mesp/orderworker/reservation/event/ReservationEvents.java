@@ -1,4 +1,4 @@
-package demo.reservation.event;
+package com.devcircus.java.microservices.mesp.orderworker.reservation.event;
 
 import org.springframework.hateoas.Resources;
 

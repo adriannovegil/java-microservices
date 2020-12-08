@@ -1,4 +1,4 @@
-package services;
+package com.devcircus.java.microservices.mmpp.apigatewayservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

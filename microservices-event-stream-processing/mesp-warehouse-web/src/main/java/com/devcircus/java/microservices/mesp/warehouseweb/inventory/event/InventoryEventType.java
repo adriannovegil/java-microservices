@@ -1,4 +1,4 @@
-package demo.inventory.event;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.event;
 
 public enum InventoryEventType {
     INVENTORY_CREATED,

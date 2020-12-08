@@ -7,6 +7,11 @@ import java.util.List;
 
 public interface TextEntityRepository extends Neo4jRepository<TextEntity, Long> {
 
+    /**
+     * 
+     * @param time
+     * @return 
+     */
     @Query("WITH timestamp() as time\n"
             + "MATCH (entity:TextEntity)<-[:HAS_ENTITY]-(t:Tweet)\n"
             + "WHERE (exists(entity.pagerank) AND "
@@ -19,6 +24,11 @@ public interface TextEntityRepository extends Neo4jRepository<TextEntity, Long> 
             + "LIMIT 1\n")
     TextEntity findUncategorizedTextEntity(Long time);
 
+    /**
+     * 
+     * @param name
+     * @param categories 
+     */
     @Query("MATCH (entity:TextEntity { name: {name} })\n"
             + "WITH entity\n"
             + "FOREACH (x in {categories} | MERGE (category:Category { name: x })\n"
@@ -26,6 +36,9 @@ public interface TextEntityRepository extends Neo4jRepository<TextEntity, Long> 
             + "SET entity.lastCategorizedAt = timestamp()")
     void saveTextEntityCategories(String name, List<String> categories);
 
+    /**
+     * 
+     */
     @Query("MATCH (e:TextEntity)\n"
             + "WHERE NOT e.name  =~ \"(?ism)(http.*|RT.*|@.*|\\\\d*|#.*|.*http.*|.*@.*|\\\\w|\\\\W.*)\"\n"
             + "WITH collect(e) as nodes\n"

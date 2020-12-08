@@ -1,4 +1,4 @@
-package demo.account.domain;
+package com.devcircus.java.microservices.mesp.accountweb.account.domain;
 
 import demo.account.event.AccountEvent;
 import demo.account.event.AccountEventType;

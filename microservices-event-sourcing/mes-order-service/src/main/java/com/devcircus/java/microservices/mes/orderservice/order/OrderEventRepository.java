@@ -1,4 +1,4 @@
-package demo.order;
+package com.devcircus.java.microservices.mes.orderservice.order;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

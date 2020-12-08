@@ -1,4 +1,4 @@
-package demo.order;
+package com.devcircus.java.microservices.mesp.orderworker.order;
 
 import demo.order.domain.Order;
 import demo.order.domain.OrderStatus;

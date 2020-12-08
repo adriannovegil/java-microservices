@@ -1,12 +1,10 @@
-package demo.warehouse.action;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.action;
 
-import demo.domain.Action;
-import demo.order.domain.Order;
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationService;
-import demo.reservation.event.ReservationEvent;
-import demo.reservation.event.ReservationEventType;
-import demo.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.ReservationService;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventType;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain.Warehouse;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

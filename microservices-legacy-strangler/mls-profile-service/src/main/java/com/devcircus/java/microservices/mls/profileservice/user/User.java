@@ -1,4 +1,4 @@
-package demo.user;
+package com.devcircus.java.microservices.mls.profileservice.user;
 
 import java.io.Serializable;
 

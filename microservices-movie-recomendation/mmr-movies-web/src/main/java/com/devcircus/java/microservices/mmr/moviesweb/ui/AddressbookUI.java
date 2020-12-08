@@ -1,4 +1,4 @@
-package application.ui;
+package com.devcircus.java.microservices.mmr.moviesweb.ui;
 
 import application.clients.UserClient;
 import application.models.User;

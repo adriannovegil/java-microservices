@@ -1,4 +1,4 @@
-package demo.account.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.account.domain;
 
 public enum AccountStatus {
     ACCOUNT_CREATED,

@@ -1,4 +1,4 @@
-package demo.profile;
+package com.devcircus.java.microservices.mls.profileservice.profile;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

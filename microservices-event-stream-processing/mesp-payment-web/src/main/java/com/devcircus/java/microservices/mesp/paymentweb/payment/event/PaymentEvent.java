@@ -1,9 +1,7 @@
-package demo.payment.event;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.event;
 
+import com.devcircus.java.microservices.mesp.paymentweb.payment.domain.Payment;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.event.Event;
-import demo.payment.controller.PaymentController;
-import demo.payment.domain.Payment;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

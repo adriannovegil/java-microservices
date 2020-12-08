@@ -1,4 +1,4 @@
-package data.repositories;
+package com.devcircus.java.microservices.mmr.movieservice.repositories;
 
 import data.domain.nodes.Movie;
 import org.springframework.data.repository.PagingAndSortingRepository;

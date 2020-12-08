@@ -1,4 +1,4 @@
-package service.data.repositories;
+package com.devcircus.java.microservices.mmpp.movieservice.data.repositories;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

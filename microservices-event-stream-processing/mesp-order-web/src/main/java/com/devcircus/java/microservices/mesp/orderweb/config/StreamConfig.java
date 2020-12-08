@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.orderweb.config;
 
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;

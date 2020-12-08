@@ -1,8 +1,8 @@
-package io.example.domain.user;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.user;
 
-import io.example.domain.friend.FriendRepository;
-import io.example.domain.friend.entity.RankedUser;
-import io.example.domain.user.entity.User;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.friend.FriendRepository;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.friend.entity.RankedUser;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.user.entity.User;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 

@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain;
 
 import java.io.Serializable;
 

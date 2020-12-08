@@ -1,4 +1,4 @@
-package service.config;
+package com.devcircus.java.microservices.mmpp.movieservice.config;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package demo.shipment;
+package com.devcircus.java.microservices.mes.inventoryservice.shipment;
 
 import org.springframework.data.neo4j.repository.GraphRepository;
 

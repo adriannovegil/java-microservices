@@ -1,8 +1,7 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.domain;
 
-import demo.domain.Service;
-import demo.order.domain.Order;
-import demo.warehouse.repository.WarehouseRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.order.domain.Order;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.repository.WarehouseRepository;
 import org.springframework.util.Assert;
 
 import java.util.List;

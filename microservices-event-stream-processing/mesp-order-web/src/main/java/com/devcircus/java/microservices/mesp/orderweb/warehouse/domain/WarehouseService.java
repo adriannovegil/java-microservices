@@ -1,4 +1,4 @@
-package demo.warehouse.domain;
+package com.devcircus.java.microservices.mesp.orderweb.warehouse.domain;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.domain.Service;

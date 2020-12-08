@@ -1,4 +1,4 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain;
 
 public enum ReservationStatus {
     RESERVATION_CREATED,

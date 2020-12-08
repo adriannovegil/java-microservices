@@ -1,6 +1,6 @@
-package application.ui;
+package com.devcircus.java.microservices.mmr.moviesweb.ui;
 
-import application.models.User;
+import com.devcircus.java.microservices.mmr.moviesweb.models.User;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.event.ShortcutAction;

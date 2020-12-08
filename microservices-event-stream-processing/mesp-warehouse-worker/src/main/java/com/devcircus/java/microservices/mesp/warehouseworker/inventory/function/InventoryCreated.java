@@ -1,9 +1,9 @@
-package demo.inventory.function;
+package com.devcircus.java.microservices.mesp.warehouseworker.inventory.function;
 
-import demo.inventory.domain.Inventory;
-import demo.inventory.domain.InventoryStatus;
-import demo.inventory.event.InventoryEvent;
-import demo.inventory.event.InventoryEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.domain.Inventory;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.domain.InventoryStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.event.InventoryEventType;
 import org.apache.log4j.Logger;
 import org.springframework.statemachine.StateContext;
 

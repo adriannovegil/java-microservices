@@ -1,4 +1,4 @@
-package demo.payment.domain;
+package com.devcircus.java.microservices.mesp.orderweb.payment.domain;
 
 import demo.event.Event;
 

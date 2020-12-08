@@ -1,4 +1,4 @@
-package data.domain.nodes;
+package com.devcircus.java.microservices.mmr.usersservice.domain.nodes;
 
 import org.neo4j.graphdb.Direction;
 import org.springframework.data.neo4j.annotation.Fetch;

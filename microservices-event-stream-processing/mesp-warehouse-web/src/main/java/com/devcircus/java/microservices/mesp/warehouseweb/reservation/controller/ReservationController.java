@@ -1,12 +1,8 @@
-package demo.reservation.controller;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.controller;
 
-import demo.event.EventService;
-import demo.event.Events;
-import demo.inventory.controller.InventoryController;
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationService;
-import demo.reservation.event.ReservationEvent;
-import demo.warehouse.controller.WarehouseController;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain.ReservationService;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.hateoas.*;

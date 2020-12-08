@@ -1,7 +1,7 @@
-package data.domain.rels;
+package com.devcircus.java.microservices.mmr.recommendationservice.domain.rels;
 
-import data.domain.nodes.Job;
-import data.domain.nodes.Event;
+import com.devcircus.java.microservices.mmr.recommendationservice.domain.nodes.Event;
+import com.devcircus.java.microservices.mmr.recommendationservice.domain.nodes.Job;
 import org.springframework.data.neo4j.annotation.EndNode;
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.RelationshipEntity;

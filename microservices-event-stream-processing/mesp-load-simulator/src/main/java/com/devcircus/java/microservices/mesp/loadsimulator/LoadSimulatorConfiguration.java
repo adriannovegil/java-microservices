@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mesp.loadsimulator;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

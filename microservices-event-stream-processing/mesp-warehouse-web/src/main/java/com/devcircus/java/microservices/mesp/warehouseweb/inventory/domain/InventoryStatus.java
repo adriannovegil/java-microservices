@@ -1,4 +1,4 @@
-package demo.inventory.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain;
 
 public enum InventoryStatus {
     INVENTORY_CREATED,

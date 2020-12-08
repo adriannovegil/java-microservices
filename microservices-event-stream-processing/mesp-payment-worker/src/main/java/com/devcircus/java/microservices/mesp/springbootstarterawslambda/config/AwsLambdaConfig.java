@@ -1,9 +1,9 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.config;
 
 import amazon.aws.AWSLambdaConfigurerAdapter;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.function.LambdaFunctions;
+import com.devcircus.java.microservices.mesp.springbootstarterawslambda.util.LambdaUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import demo.function.LambdaFunctions;
-import demo.util.LambdaUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

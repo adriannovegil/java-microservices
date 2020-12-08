@@ -1,4 +1,4 @@
-package demo.warehouse.exception;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.exception;
 
 public class WarehouseNotFoundException extends RuntimeException {
 

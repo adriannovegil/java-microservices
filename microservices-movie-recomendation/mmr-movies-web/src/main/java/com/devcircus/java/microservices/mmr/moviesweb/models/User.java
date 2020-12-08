@@ -1,4 +1,4 @@
-package application.models;
+package com.devcircus.java.microservices.mmr.moviesweb.models;
 
 import org.joda.time.DateTime;
 

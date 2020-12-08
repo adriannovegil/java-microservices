@@ -1,6 +1,6 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.order.event;
 
-import demo.domain.AbstractEntity;
+import com.devcircus.java.microservices.mesp.warehouseworker.domain.AbstractEntity;
 
 public class OrderEvent extends AbstractEntity {
 

@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.loadsimulator.domain;
 
 import java.io.Serializable;
 

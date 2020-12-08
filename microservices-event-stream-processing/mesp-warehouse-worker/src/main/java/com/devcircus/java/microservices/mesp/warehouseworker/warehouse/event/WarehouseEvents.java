@@ -1,4 +1,4 @@
-package demo.warehouse.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event;
 
 import org.springframework.hateoas.Resources;
 

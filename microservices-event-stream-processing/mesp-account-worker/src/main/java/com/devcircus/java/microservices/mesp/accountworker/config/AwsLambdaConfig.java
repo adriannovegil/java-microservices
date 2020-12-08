@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.accountworker.config;
 
 import amazon.aws.AWSLambdaConfigurerAdapter;
 import com.fasterxml.jackson.databind.ObjectMapper;

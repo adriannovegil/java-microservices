@@ -1,15 +1,14 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.config;
 
-import demo.event.EventSource;
-import demo.inventory.config.InventoryEventSource;
-import demo.inventory.event.InventoryEventRepository;
-import demo.inventory.event.InventoryEventService;
-import demo.reservation.config.ReservationEventSource;
-import demo.reservation.event.ReservationEventRepository;
-import demo.reservation.event.ReservationEventService;
-import demo.warehouse.config.WarehouseEventSource;
-import demo.warehouse.event.WarehouseEventRepository;
-import demo.warehouse.event.WarehouseEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.config.InventoryEventSource;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEventRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.config.ReservationEventSource;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.config.WarehouseEventSource;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event.WarehouseEventRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event.WarehouseEventService;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,14 +1,19 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mes.orderservice.api.v1;
 
-import demo.account.Account;
-import demo.address.AddressType;
+import com.devcircus.java.microservices.mes.orderservice.account.Account;
+import com.devcircus.java.microservices.mes.orderservice.address.AddressType;
+import com.devcircus.java.microservices.mes.orderservice.order.LineItem;
+import com.devcircus.java.microservices.mes.orderservice.order.Order;
+import com.devcircus.java.microservices.mes.orderservice.order.OrderEvent;
+import com.devcircus.java.microservices.mes.orderservice.order.OrderEventRepository;
+import com.devcircus.java.microservices.mes.orderservice.order.OrderEventType;
+import com.devcircus.java.microservices.mes.orderservice.order.OrderRepository;
 import demo.order.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;

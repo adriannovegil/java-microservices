@@ -1,6 +1,6 @@
-package demo.reservation.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.event;
 
-import demo.reservation.ReservationStateFactory;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.ReservationStateFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;

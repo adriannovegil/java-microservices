@@ -1,4 +1,4 @@
-package data.repositories;
+package com.devcircus.java.microservices.mmr.recommendationservice.repositories;
 
 import data.domain.nodes.Job;
 import org.springframework.data.repository.PagingAndSortingRepository;

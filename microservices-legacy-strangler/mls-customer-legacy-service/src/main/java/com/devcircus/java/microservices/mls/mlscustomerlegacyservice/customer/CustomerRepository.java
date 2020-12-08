@@ -1,4 +1,4 @@
-package com.example.customer;
+package com.devcircus.java.microservices.mls.mlscustomerlegacyservice.customer;
 
 import com.kennybastani.guides.customer_service.Customer;
 import org.apache.log4j.Logger;

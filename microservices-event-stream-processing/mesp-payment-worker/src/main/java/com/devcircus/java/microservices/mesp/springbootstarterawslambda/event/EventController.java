@@ -1,4 +1,4 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.springbootstarterawslambda.event;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

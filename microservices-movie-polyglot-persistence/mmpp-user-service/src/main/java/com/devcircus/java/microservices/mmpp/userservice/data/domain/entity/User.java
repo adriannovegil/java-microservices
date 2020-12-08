@@ -1,4 +1,4 @@
-package service.data.domain.entity;
+package com.devcircus.java.microservices.mmpp.userservice.data.domain.entity;
 
 import org.neo4j.graphdb.Direction;
 import org.springframework.data.neo4j.annotation.*;

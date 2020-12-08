@@ -1,10 +1,9 @@
-package demo.reservation.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.domain;
 
-import demo.domain.Service;
-import demo.reservation.event.ReservationEvent;
-import demo.reservation.event.ReservationEventService;
-import demo.reservation.event.ReservationEventType;
-import demo.reservation.repository.ReservationRepository;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.event.ReservationEventType;
+import com.devcircus.java.microservices.mesp.warehouseweb.reservation.repository.ReservationRepository;
 import org.springframework.util.Assert;
 
 import java.util.List;

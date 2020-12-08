@@ -1,4 +1,4 @@
-package demo.account.service;
+package com.devcircus.java.microservices.mesp.loadsimulator.account.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import demo.account.domain.Account;

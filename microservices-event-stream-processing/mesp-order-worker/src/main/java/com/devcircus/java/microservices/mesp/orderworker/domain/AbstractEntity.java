@@ -1,4 +1,4 @@
-package demo.domain;
+package com.devcircus.java.microservices.mesp.orderworker.domain;
 
 import org.springframework.hateoas.ResourceSupport;
 

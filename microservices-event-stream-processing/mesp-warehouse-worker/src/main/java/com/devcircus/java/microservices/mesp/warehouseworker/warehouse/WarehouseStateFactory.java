@@ -1,10 +1,10 @@
-package demo.warehouse;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse;
 
-import demo.warehouse.domain.Warehouse;
-import demo.warehouse.domain.WarehouseStatus;
-import demo.warehouse.event.WarehouseEvent;
-import demo.warehouse.event.WarehouseEventType;
-import demo.warehouse.event.WarehouseEvents;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.domain.WarehouseStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvents;
 import org.apache.log4j.Logger;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.MediaTypes;

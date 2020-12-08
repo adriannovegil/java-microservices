@@ -1,4 +1,4 @@
-package io.example.domain.friend;
+package io.com.devcircus.java.microservices.mfres.friendservice.domain.friend;
 
 import org.springframework.data.r2dbc.repository.query.Query;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;

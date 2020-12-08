@@ -1,7 +1,6 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.orderworker.order.event;
 
-import demo.order.StateFactory;
-import demo.order.domain.Order;
+import com.devcircus.java.microservices.mesp.orderworker.order.StateFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;

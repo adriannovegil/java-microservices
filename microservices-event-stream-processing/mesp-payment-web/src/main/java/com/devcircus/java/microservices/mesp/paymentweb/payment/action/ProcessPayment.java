@@ -1,4 +1,4 @@
-package demo.payment.action;
+package com.devcircus.java.microservices.mesp.paymentweb.payment.action;
 
 import demo.domain.Action;
 import demo.payment.domain.Payment;

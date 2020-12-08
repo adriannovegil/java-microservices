@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mes.userservice.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

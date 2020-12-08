@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mesp.dashboardweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

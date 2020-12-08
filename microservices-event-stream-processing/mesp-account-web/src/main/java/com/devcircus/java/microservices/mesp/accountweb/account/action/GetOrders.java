@@ -1,9 +1,7 @@
-package demo.account.action;
+package com.devcircus.java.microservices.mesp.accountweb.account.action;
 
-import demo.account.domain.Account;
-import demo.domain.Action;
-import demo.order.domain.OrderModule;
-import demo.order.domain.Orders;
+import com.devcircus.java.microservices.mesp.accountweb.account.domain.Account;
+import com.devcircus.java.microservices.mesp.accountweb.order.domain.OrderModule;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

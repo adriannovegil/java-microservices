@@ -1,4 +1,4 @@
-package demo.warehouse.repository;
+package com.devcircus.java.microservices.mesp.warehouseweb.warehouse.repository;
 
 import demo.warehouse.domain.Warehouse;
 import org.springframework.data.jpa.repository.JpaRepository;

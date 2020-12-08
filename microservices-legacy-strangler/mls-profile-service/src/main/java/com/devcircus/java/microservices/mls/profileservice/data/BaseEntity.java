@@ -1,4 +1,4 @@
-package demo.data;
+package com.devcircus.java.microservices.mls.profileservice.data;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

@@ -1,4 +1,4 @@
-package demo.customer;
+package com.devcircus.java.microservices.mls.profileservice.customer;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

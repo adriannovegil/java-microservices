@@ -1,11 +1,17 @@
-package demo.reservation.config;
+package com.devcircus.java.microservices.mesp.warehouseworker.reservation.config;
 
-import demo.order.domain.Order;
-import demo.reservation.domain.Reservation;
-import demo.reservation.domain.ReservationStatus;
-import demo.reservation.event.ReservationEvent;
-import demo.reservation.event.ReservationEventType;
-import demo.reservation.function.*;
+import com.devcircus.java.microservices.mesp.warehouseworker.order.domain.Order;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain.Reservation;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.domain.ReservationStatus;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.event.ReservationEventType;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.InventoryConnected;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.OrderConnected;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.ReservationCreated;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.ReservationFailed;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.ReservationFunction;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.ReservationRequested;
+import com.devcircus.java.microservices.mesp.warehouseworker.reservation.function.ReservationSucceeded;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,9 +29,9 @@ import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
-import static demo.order.domain.OrderStatus.ORDER_FAILED;
-import static demo.order.domain.OrderStatus.RESERVATION_FAILED;
-import static demo.order.domain.OrderStatus.RESERVATION_PENDING;
+import static com.devcircus.java.microservices.mesp.warehouseworker.domain.OrderStatus.ORDER_FAILED;
+import static com.devcircus.java.microservices.mesp.warehouseworker.domain.OrderStatus.RESERVATION_FAILED;
+import static com.devcircus.java.microservices.mesp.warehouseworker.domain.OrderStatus.RESERVATION_PENDING;
 
 @Configuration
 @EnableStateMachineFactory(name = "reservationStateMachineFactory")

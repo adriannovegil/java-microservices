@@ -1,4 +1,4 @@
-package demo.reservation.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.reservation.config;
 
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;

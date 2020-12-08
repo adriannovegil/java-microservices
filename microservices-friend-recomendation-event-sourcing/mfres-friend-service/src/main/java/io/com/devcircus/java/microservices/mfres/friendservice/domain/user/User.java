@@ -1,4 +1,4 @@
-package io.example.domain.user;
+package io.com.devcircus.java.microservices.mfres.friendservice.domain.user;
 
 import org.springframework.integration.support.json.Jackson2JsonObjectMapper;
 

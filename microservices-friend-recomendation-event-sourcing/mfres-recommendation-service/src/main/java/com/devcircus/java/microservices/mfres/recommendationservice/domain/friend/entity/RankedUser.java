@@ -1,6 +1,6 @@
-package io.example.domain.friend.entity;
+package com.devcircus.java.microservices.mfres.recommendationservice.domain.friend.entity;
 
-import io.example.domain.user.entity.User;
+import com.devcircus.java.microservices.mfres.recommendationservice.domain.user.entity.User;
 import org.springframework.data.neo4j.annotation.QueryResult;
 
 import java.util.Objects;

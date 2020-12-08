@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mes.orderservice.config;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;

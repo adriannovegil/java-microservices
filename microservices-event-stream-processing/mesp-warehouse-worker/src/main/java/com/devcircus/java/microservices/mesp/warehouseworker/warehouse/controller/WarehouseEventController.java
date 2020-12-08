@@ -1,7 +1,7 @@
-package demo.warehouse.controller;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.controller;
 
-import demo.warehouse.WarehouseStateFactory;
-import demo.warehouse.event.WarehouseEvent;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.WarehouseStateFactory;
+import com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event.WarehouseEvent;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

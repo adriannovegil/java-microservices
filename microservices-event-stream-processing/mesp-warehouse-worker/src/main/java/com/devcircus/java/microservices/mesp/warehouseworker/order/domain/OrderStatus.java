@@ -1,4 +1,4 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.warehouseworker.order.domain;
 
 public enum OrderStatus {
     ORDER_CREATED,

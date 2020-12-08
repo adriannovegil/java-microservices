@@ -1,4 +1,4 @@
-package demo.config;
+package com.devcircus.java.microservices.mesp.warehouseweb.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;

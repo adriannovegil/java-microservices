@@ -1,6 +1,6 @@
-package demo.inventory.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.inventory.event;
 
-import demo.inventory.InventoryStateFactory;
+import com.devcircus.java.microservices.mesp.warehouseworker.inventory.InventoryStateFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;

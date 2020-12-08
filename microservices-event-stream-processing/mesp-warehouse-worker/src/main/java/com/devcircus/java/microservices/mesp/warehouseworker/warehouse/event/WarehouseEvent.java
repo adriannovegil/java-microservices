@@ -1,7 +1,6 @@
-package demo.warehouse.event;
+package com.devcircus.java.microservices.mesp.warehouseworker.warehouse.event;
 
-import demo.domain.AbstractEntity;
-import demo.warehouse.domain.Warehouse;
+import com.devcircus.java.microservices.mesp.warehouseworker.domain.AbstractEntity;
 
 public class WarehouseEvent extends AbstractEntity {
 

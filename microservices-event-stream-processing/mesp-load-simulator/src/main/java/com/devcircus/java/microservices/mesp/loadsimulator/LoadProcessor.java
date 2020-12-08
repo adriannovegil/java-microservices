@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mesp.loadsimulator;
 
 import com.github.javafaker.Faker;
 import demo.account.domain.Account;

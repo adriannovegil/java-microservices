@@ -1,6 +1,5 @@
-package demo;
+package com.devcircus.java.microservices.mesp.warehouseweb;
 
-import demo.event.EventAutoConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;

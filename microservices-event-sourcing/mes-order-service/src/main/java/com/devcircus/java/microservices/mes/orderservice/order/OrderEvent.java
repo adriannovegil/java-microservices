@@ -1,6 +1,6 @@
-package demo.order;
+package com.devcircus.java.microservices.mes.orderservice.order;
 
-import demo.domain.BaseEntity;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;

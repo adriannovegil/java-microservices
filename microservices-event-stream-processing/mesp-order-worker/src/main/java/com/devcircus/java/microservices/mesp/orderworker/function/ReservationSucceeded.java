@@ -1,4 +1,4 @@
-package demo.function;
+package com.devcircus.java.microservices.mesp.orderworker.function;
 
 import demo.order.event.OrderEvent;
 import demo.order.event.OrderEventType;

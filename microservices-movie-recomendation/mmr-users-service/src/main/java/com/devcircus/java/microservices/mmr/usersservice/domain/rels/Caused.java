@@ -1,7 +1,7 @@
-package data.domain.rels;
+package com.devcircus.java.microservices.mmr.usersservice.domain.rels;
 
-import data.domain.nodes.Event;
-import data.domain.nodes.User;
+import com.devcircus.java.microservices.mmr.usersservice.domain.nodes.Event;
+import com.devcircus.java.microservices.mmr.usersservice.domain.nodes.User;
 import org.springframework.data.neo4j.annotation.EndNode;
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.RelationshipEntity;

@@ -1,9 +1,7 @@
-package demo.inventory.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.inventory.domain;
 
-import demo.domain.Module;
-import demo.event.EventService;
-import demo.inventory.event.InventoryEvent;
-import demo.inventory.event.InventoryEventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEvent;
+import com.devcircus.java.microservices.mesp.warehouseweb.inventory.event.InventoryEventService;
 
 @org.springframework.stereotype.Service
 public class InventoryModule extends Module<Inventory> {

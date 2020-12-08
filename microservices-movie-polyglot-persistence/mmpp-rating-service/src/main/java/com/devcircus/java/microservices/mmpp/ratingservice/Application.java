@@ -1,5 +1,9 @@
-package service;
+package com.devcircus.java.microservices.mmpp.ratingservice;
 
+import com.devcircus.java.microservices.mmpp.ratingservice.config.GraphDatabaseConfiguration;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.entity.Product;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.entity.User;
+import com.devcircus.java.microservices.mmpp.ratingservice.data.domain.rels.Rating;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +17,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
 import org.springframework.hateoas.hal.Jackson2HalModule;
-import service.config.GraphDatabaseConfiguration;
-import service.data.domain.entity.Product;
-import service.data.domain.entity.User;
-import service.data.domain.rels.Rating;
 
 import javax.annotation.PostConstruct;
 

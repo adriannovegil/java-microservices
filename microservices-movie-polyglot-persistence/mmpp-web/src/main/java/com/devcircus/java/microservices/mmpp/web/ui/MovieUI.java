@@ -1,8 +1,8 @@
-package service.ui;
+package com.devcircus.java.microservices.mmpp.web.ui;
 
-import service.clients.MovieClient;
-import service.models.Genre;
-import service.models.Movie;
+import com.devcircus.java.microservices.mmpp.web.clients.MovieClient;
+import com.devcircus.java.microservices.mmpp.web.models.Genre;
+import com.devcircus.java.microservices.mmpp.web.models.Movie;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;

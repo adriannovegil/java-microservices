@@ -1,4 +1,4 @@
-package demo.data;
+package com.devcircus.java.microservices.mes.userservice.data;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;

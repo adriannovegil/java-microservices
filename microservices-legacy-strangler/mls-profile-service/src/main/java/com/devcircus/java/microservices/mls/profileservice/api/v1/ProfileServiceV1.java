@@ -1,9 +1,9 @@
-package demo.api.v1;
+package com.devcircus.java.microservices.mls.profileservice.api.v1;
 
-import demo.customer.CustomerClient;
-import demo.profile.Profile;
-import demo.profile.ProfileRepository;
-import demo.user.User;
+import com.devcircus.java.microservices.mls.profileservice.customer.CustomerClient;
+import com.devcircus.java.microservices.mls.profileservice.profile.Profile;
+import com.devcircus.java.microservices.mls.profileservice.profile.ProfileRepository;
+import com.devcircus.java.microservices.mls.profileservice.user.User;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

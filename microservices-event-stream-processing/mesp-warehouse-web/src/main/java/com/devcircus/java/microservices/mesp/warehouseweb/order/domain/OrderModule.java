@@ -1,8 +1,6 @@
-package demo.order.domain;
+package com.devcircus.java.microservices.mesp.warehouseweb.order.domain;
 
-import demo.warehouse.event.WarehouseEvent;
-import demo.domain.Module;
-import demo.event.EventService;
+import com.devcircus.java.microservices.mesp.warehouseweb.warehouse.event.WarehouseEvent;
 
 @org.springframework.stereotype.Service
 public class OrderModule extends Module<Order> {

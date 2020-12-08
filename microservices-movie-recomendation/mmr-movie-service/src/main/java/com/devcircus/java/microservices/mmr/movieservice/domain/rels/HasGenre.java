@@ -1,7 +1,7 @@
-package data.domain.rels;
+package com.devcircus.java.microservices.mmr.movieservice.domain.rels;
 
-import data.domain.nodes.Genre;
-import data.domain.nodes.Movie;
+import com.devcircus.java.microservices.mmr.movieservice.domain.nodes.Genre;
+import com.devcircus.java.microservices.mmr.movieservice.domain.nodes.Movie;
 import org.springframework.data.neo4j.annotation.EndNode;
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.RelationshipEntity;

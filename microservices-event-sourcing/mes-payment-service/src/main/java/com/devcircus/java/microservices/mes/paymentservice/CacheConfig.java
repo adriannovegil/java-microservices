@@ -1,4 +1,4 @@
-package demo;
+package com.devcircus.java.microservices.mes.paymentservice;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;

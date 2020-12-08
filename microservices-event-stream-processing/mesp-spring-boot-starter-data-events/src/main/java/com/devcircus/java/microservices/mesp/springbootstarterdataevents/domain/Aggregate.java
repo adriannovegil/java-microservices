@@ -1,9 +1,9 @@
 package com.devcircus.java.microservices.mesp.springbootstarterdataevents.domain;
 
+import com.devcircus.java.microservices.mesp.springbootstarterdataevents.event.Event;
+import com.devcircus.java.microservices.mesp.springbootstarterdataevents.event.EventService;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import demo.event.Event;
-import demo.event.EventService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.ResolvableType;
 import org.springframework.hateoas.*;

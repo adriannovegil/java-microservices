@@ -1,9 +1,8 @@
-package demo.account;
+package com.devcircus.java.microservices.mes.orderservice.account;
 
-import demo.address.Address;
-import demo.creditcard.CreditCard;
-import demo.data.BaseEntity;
-
+import com.devcircus.java.microservices.mes.orderservice.address.Address;
+import com.devcircus.java.microservices.mes.orderservice.creditcard.CreditCard;
+import com.devcircus.java.microservices.mes.orderservice.data.BaseEntity;
 import java.util.HashSet;
 import java.util.Set;
 

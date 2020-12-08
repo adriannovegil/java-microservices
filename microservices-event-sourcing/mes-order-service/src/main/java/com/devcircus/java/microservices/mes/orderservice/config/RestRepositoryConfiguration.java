@@ -1,8 +1,8 @@
-package demo.config;
+package com.devcircus.java.microservices.mes.orderservice.config;
 
+import com.devcircus.java.microservices.mes.orderservice.order.Order;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
-import demo.order.*;
 
 public class RestRepositoryConfiguration extends RepositoryRestConfigurerAdapter {
 

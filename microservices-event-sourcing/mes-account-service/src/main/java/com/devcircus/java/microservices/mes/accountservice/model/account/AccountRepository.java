@@ -1,0 +1,11 @@
+package com.devcircus.java.microservices.mes.accountservice.model.account;
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+
+public interface AccountRepository extends PagingAndSortingRepository<Account, Long> {
+
+    List<Account> findAccountsByUserId(@Param("userId") String userId);
+}

@@ -1,4 +1,4 @@
-package io.example.domain.friend;
+package io.com.devcircus.java.microservices.mfres.friendservice.domain.friend;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;

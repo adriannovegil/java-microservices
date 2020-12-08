@@ -2,6 +2,11 @@ package com.devcircus.java.microservices.mtsa.twitterrankcrawlerservice.math;
 
 public class Statistics {
 
+    /**
+     * 
+     * @param numArray
+     * @return 
+     */
     public static double standardDeviation(double[] numArray) {
         double sum = 0.0, standardDeviation = 0.0;
         int length = numArray.length;
@@ -15,6 +20,11 @@ public class Statistics {
         return Math.sqrt(standardDeviation / length);
     }
 
+    /**
+     * 
+     * @param m
+     * @return 
+     */
     public static double mean(double[] m) {
         double sum = 0;
         for (double v : m) {

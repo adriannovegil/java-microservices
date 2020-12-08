@@ -1,6 +1,5 @@
-package demo.event;
+package com.devcircus.java.microservices.mesp.accountworker.event;
 
-import demo.account.Account;
 import demo.domain.BaseEntity;
 
 public class AccountEvent extends BaseEntity {

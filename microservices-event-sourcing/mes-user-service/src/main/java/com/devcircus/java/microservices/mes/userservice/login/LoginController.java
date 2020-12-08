@@ -1,4 +1,4 @@
-package demo.login;
+package com.devcircus.java.microservices.mes.userservice.login;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

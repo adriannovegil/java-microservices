@@ -17,9 +17,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Infra -->
         <module>spc-config-service</module>
         <module>spc-discovery-service</module>
         <module>spc-admin-service</module>
+        <!-- Services -->
         <module>spc-api-gateway</module>        
         <module>spc-customers-service</module>        
         <module>spc-vets-service</module>

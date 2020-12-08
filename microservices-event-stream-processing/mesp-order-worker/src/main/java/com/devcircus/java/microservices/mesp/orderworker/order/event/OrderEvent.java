@@ -1,7 +1,7 @@
-package demo.order.event;
+package com.devcircus.java.microservices.mesp.orderworker.order.event;
 
+import com.devcircus.java.microservices.mesp.orderworker.domain.AbstractEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import demo.domain.AbstractEntity;
 import org.springframework.hateoas.Link;
 
 public class OrderEvent extends AbstractEntity {

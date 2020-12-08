@@ -1,6 +1,4 @@
-package demo.account.event;
-
-import demo.event.EventRepository;
+package com.devcircus.java.microservices.mesp.accountweb.account.event;
 
 public interface AccountEventRepository extends EventRepository<AccountEvent, Long> {
 }
