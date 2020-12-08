@@ -18,14 +18,15 @@
 
     <modules>
         <!-- Infra -->
-        <module>spc-config-service</module>
-        <module>spc-discovery-service</module>
-        <module>spc-admin-service</module>
-        <!-- Services -->
-        <module>spc-api-gateway</module>        
-        <module>spc-customers-service</module>        
-        <module>spc-vets-service</module>
-        <module>spc-visits-service</module>
+        <module>infra/spc-config-service</module>
+        <module>infra/spc-discovery-service</module>
+        <module>infra/spc-admin-service</module>
+        <!-- Services -->                
+        <module>services/spc-customers-service</module>        
+        <module>services/spc-vets-service</module>
+        <module>services/spc-visits-service</module>
+        <!-- Web -->
+        <module>web/spc-api-gateway</module>
     </modules>
 
     <properties>

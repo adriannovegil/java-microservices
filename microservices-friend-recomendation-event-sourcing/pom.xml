@@ -18,14 +18,15 @@
 
     <modules>        
         <!-- Infra -->
-        <module>mfres-config-service</module>
-        <module>mfres-discovery-service</module>
-        <module>mfres-admin-service</module>
+        <module>infra/mfres-config-service</module>
+        <module>infra/mfres-discovery-service</module>
+        <module>infra/mfres-admin-service</module>
         <!-- Services -->
-        <!--    <module>mfres-edge-service</module>
-        <module>mfres-friend-service</module>
-        <module>mfres-recommendation-service</module>
-        <module>mfres-user-service</module>-->
+        <!--    <module>services/mfres-edge-service</module>
+        <module>services/mfres-friend-service</module>
+        <module>services/mfres-recommendation-service</module>
+        <module>services/mfres-user-service</module>-->
+        <!-- Web -->
     </modules>
 
     <properties>

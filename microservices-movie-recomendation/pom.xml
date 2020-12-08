@@ -18,16 +18,17 @@
 
     <modules>
         <!-- Infra -->
-        <module>mmr-config-service</module>        
-        <module>mmr-discovery-service</module>
-        <module>mmr-admin-service</module>
+        <module>infra/mmr-config-service</module>        
+        <module>infra/mmr-discovery-service</module>
+        <module>infra/mmr-admin-service</module>
         <!-- Services -->
-        <!--<module>mmr-consul-service</module>-->
-        <!--        <module>mmr-api-gateway-service</module>                        
-        <module>mmr-movie-service</module>
-        <module>mmr-movies-web</module>
-        <module>mmr-recommendation-service</module>
-        <module>mmr-users-service</module>        -->
+        <!--<module>services/mmr-consul-service</module>-->
+        <!--        <module>services/mmr-api-gateway-service</module>                        
+        <module>services/mmr-movie-service</module>        
+        <module>services/mmr-recommendation-service</module>
+        <module>services/mmr-users-service</module>        -->
+        <!-- Web -->
+        <!--<module>web/mmr-movies-web</module>-->
     </modules>
 
     <properties>

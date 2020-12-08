@@ -18,16 +18,17 @@
 
     <modules>
         <!-- Infra -->
-        <module>mls-config-service</module>
-        <module>mls-discovery-service</module>
-        <module>mls-admin-service</module>
+        <module>infra/mls-config-service</module>
+        <module>infra/mls-discovery-service</module>
+        <module>infra/mls-admin-service</module>
         <!-- Services -->
-        <!--        <module>mls-customer-legacy-service</module>        
-        <module>mls-legacy-edge-legacy-service</module>
-        <module>mls-mls-edge-service</module>
-        <module>mls-profile-service</module>
-        <module>mls-profile-web</module>
-        <module>mls-user-service</module>-->
+        <!--        <module>services/mls-customer-legacy-service</module>        
+        <module>services/mls-legacy-edge-legacy-service</module>
+        <module>services/mls-mls-edge-service</module>
+        <module>services/mls-profile-service</module>        
+        <module>services/mls-user-service</module>-->
+        <!-- Web -->
+        <!--<module>web/mls-profile-web</module>-->
     </modules>
 
     <properties>

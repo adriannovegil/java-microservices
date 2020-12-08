@@ -18,23 +18,24 @@
 
     <modules>
         <!-- Infra -->
-        <module>mesp-config-service</module>
-        <module>mesp-discovery-service</module>        
-        <module>mesp-admin-service</module>  
+        <module>infra/mesp-config-service</module>
+        <module>infra/mesp-discovery-service</module>        
+        <module>infra/mesp-admin-service</module>  
         <!-- Services -->      
-        <!--        <module>mesp-account-web</module>
-        <module>mesp-account-worker</module>
-        <module>mesp-dashboard-web</module>
-        <module>mesp-data-flow-server</module>        
-        <module>mesp-load-simulator</module>
-        <module>mesp-order-web</module>
-        <module>mesp-order-worker</module>
-        <module>mesp-payment-web</module>
-        <module>mesp-payment-worker</module>
-        <module>mesp-spring-boot-starter-aws-lambda</module>
-        <module>mesp-spring-boot-starter-data-events</module>
-        <module>mesp-warehouse-web</module>
-        <module>mesp-warehouse-worker</module>-->
+        <!--        <module>services/mesp-account-worker</module>        
+        <module>services/mesp-data-flow-server</module>        
+        <module>services/mesp-load-simulator</module>        
+        <module>services/mesp-order-worker</module>        
+        <module>services/mesp-payment-worker</module>
+        <module>services/mesp-spring-boot-starter-aws-lambda</module>
+        <module>services/mesp-spring-boot-starter-data-events</module>        
+        <module>services/mesp-warehouse-worker</module>-->
+        <!-- Web -->
+        <!--        <module>web/mesp-account-web</module>
+        <module>web/mesp-dashboard-web</module>
+        <module>web/mesp-order-web</module>
+        <module>web/mesp-payment-web</module>
+        <module>web/mesp-warehouse-web</module>-->
     </modules>
 
     <properties>

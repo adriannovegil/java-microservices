@@ -18,19 +18,20 @@
 
     <modules>
         <!-- Infra -->
-        <module>mes-config-service</module>
-        <module>mes-discovery-service</module>
-        <module>mes-admin-service</module>
+        <module>infra/mes-config-service</module>
+        <module>infra/mes-discovery-service</module>
+        <module>infra/mes-admin-service</module>
         <!-- Services -->
-<!--        <module>mes-account-service</module>
-        <module>mes-catalog-service</module>                
-        <module>mes-edge-service</module>
-        <module>mes-inventory-service</module>
-        <module>mes-online-store-web</module>
-        <module>mes-order-service</module>
-        <module>mes-payment-service</module>
-        <module>mes-cart-service</module>
-        <module>mes-user-service</module>-->
+        <!--        <module>services/mes-account-service</module>
+        <module>services/mes-catalog-service</module>                
+        <module>services/mes-edge-service</module>
+        <module>services/mes-inventory-service</module>        
+        <module>services/mes-order-service</module>
+        <module>services/mes-payment-service</module>
+        <module>services/mes-cart-service</module>
+        <module>services/mes-user-service</module>-->
+        <!-- Web -->
+        <!--<module>web/mes-online-store-web</module>-->
     </modules>
 
     <properties>

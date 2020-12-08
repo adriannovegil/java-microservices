@@ -18,12 +18,13 @@
 
     <modules>
         <!-- Infra -->
-        <module>mtsa-config-service</module>
-        <module>mtsa-discovery-service</module>
-        <module>mtsa-admin-service</module>
+        <module>infra/mtsa-config-service</module>
+        <module>infra/mtsa-discovery-service</module>
+        <module>infra/mtsa-admin-service</module>
         <!-- Services -->
-        <!--<module>mtsa-twitter-rank-crawler-service</module>-->
-        <module>mtsa-twitter-rank-web</module>
+        <!--<module>services/mtsa-twitter-rank-crawler-service</module>-->       
+        <!-- Web -->
+        <module>web/mtsa-twitter-rank-web</module>
     </modules>
 
     <properties>

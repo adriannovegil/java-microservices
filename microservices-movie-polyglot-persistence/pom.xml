@@ -18,15 +18,16 @@
 
     <modules>
         <!-- Infra -->
-        <module>mmpp-config-service</module>
-        <module>mmpp-discovery-service</module>
-        <module>mmpp-admin-service</module>
+        <module>infra/mmpp-config-service</module>
+        <module>infra/mmpp-discovery-service</module>
+        <module>infra/mmpp-admin-service</module>
         <!-- Services -->
-        <!--        <module>mmpp-api-gateway-service</module>                
-        <module>mmpp-movie-service</module>
-        <module>mmpp-rating-service</module>
-        <module>mmpp-user-service</module>
-        <module>mmpp-web</module>-->
+        <!--        <module>services/mmpp-api-gateway-service</module>                
+        <module>services/mmpp-movie-service</module>
+        <module>services/mmpp-rating-service</module>
+        <module>services/mmpp-user-service</module>        -->
+        <!-- Web -->
+        <!--<module>web/mmpp-web</module>-->
     </modules>
 
     <properties>
